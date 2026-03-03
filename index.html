@@ -962,22 +962,25 @@ window.addEventListener("load", async () => {
     }
   });
 
-  window.ethereum.on("chainChanged", () => window.location.reload());
+  window.ethereum.on("chainChanged", (chainId) => {
+    // Só recarrega se mudar para uma rede diferente — evita loop
+    const newChainId = parseInt(chainId, 16);
+    if (newChainId !== BSC_CHAIN_ID) {
+      showPanel("w-wrong-network");
+    } else {
+      window.location.reload();
+    }
+  });
 
-  // Carregar dados do contrato (sem carteira, via RPC público)
-  if (isContractConfigured()) {
-    loadPublicContractData();
-  } else {
-    // Contrato ainda não deployado — mostrar info estática
-    document.getElementById("w-tier-num") && (document.getElementById("w-tier-num").textContent = "1");
-    document.getElementById("w-price-val") && (document.getElementById("w-price-val").textContent = "0.035");
-  }
+  // Dados estáticos iniciais — só carrega da blockchain quando a carteira conectar
+  document.getElementById("w-tier-num") && (document.getElementById("w-tier-num").textContent = "1");
+  document.getElementById("w-price-val") && (document.getElementById("w-price-val").textContent = "0.035");
 });
 
 // ── LOAD PUBLIC DATA (sem conexão) ────────────────────────────
 async function loadPublicContractData() {
   try {
-    const readProvider = new ethers.providers.JsonRpcProvider("https://data-seed-prebsc-1-s1.binance.org:8545/");
+    const readProvider = new ethers.providers.StaticJsonRpcProvider("https://data-seed-prebsc-1-s1.binance.org:8545/", { chainId: 97, name: "bnbt" });
     const pehRead = new ethers.Contract(PEH_CONTRACT, PEH_ABI, readProvider);
     const usdtRead = new ethers.Contract(USDT_CONTRACT, USDT_ABI, readProvider);
 
