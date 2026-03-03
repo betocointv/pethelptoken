@@ -602,8 +602,8 @@
       <p style="font-size:.8rem;font-weight:700;color:#fff;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em;" data-i18n="footer.contact">Contato</p>
       <div class="footer-links">
         <a href="mailto:contato@pethelp.io">contato@pethelp.io</a>
-        <a href="#">Telegram</a>
-        <a href="#">Twitter / X</a>
+        <a href="#" onclick="return false;">Telegram</a>
+        <a href="#" onclick="return false;">Twitter / X</a>
       </div>
     </div>
   </div>
@@ -856,19 +856,19 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 const PEH_CONTRACT  = "0x036108Ce9A7fE7c28E61482CA61F6e3720535BF2";
 
 // USDT na BSC Mainnet (não precisa alterar)
-const USDT_CONTRACT = "0x55d398326f99059fF775485246999027B3197955";
+const USDT_CONTRACT = "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd";
 
 // BSC Mainnet
-const BSC_CHAIN_ID     = 56;
-const BSC_CHAIN_ID_HEX = "0x38";
+const BSC_CHAIN_ID     = 97;
+const BSC_CHAIN_ID_HEX = "0x61";
 const BSC_PARAMS = {
   chainId: BSC_CHAIN_ID_HEX,
-  chainName: "BNB Smart Chain Mainnet",
+  chainName: "BNB Smart Chain Testnet",
   nativeCurrency: { name: "BNB", symbol: "BNB", decimals: 18 },
-  rpcUrls: ["https://bsc-dataseed.binance.org/"],
-  blockExplorerUrls: ["https://bscscan.com"]
+  rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
+  blockExplorerUrls: ["https://testnet.bscscan.com"]
 };
-const BSCSCAN_URL = "https://bscscan.com";
+const BSCSCAN_URL = "https://testnet.bscscan.com";
 
 // ── ABIs (mínimos) ────────────────────────────────────────────
 const PEH_ABI = [
@@ -977,7 +977,7 @@ window.addEventListener("load", async () => {
 // ── LOAD PUBLIC DATA (sem conexão) ────────────────────────────
 async function loadPublicContractData() {
   try {
-    const readProvider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed.binance.org/");
+    const readProvider = new ethers.providers.JsonRpcProvider("https://data-seed-prebsc-1-s1.binance.org:8545/");
     const pehRead = new ethers.Contract(PEH_CONTRACT, PEH_ABI, readProvider);
     const usdtRead = new ethers.Contract(USDT_CONTRACT, USDT_ABI, readProvider);
 
