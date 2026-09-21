@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PET HELP — Resgatar. Castrar. Adotar.</title>
-  <meta name="description" content="PEH Token — Um ecossistema cripto-social para erradicar o abandono animal." />
+  <meta name="description" content="PET HELP (PEH) — App para reencontrar animais perdidos e registrar adoções, rede de parceiros e token com impacto verificável na blockchain. Piloto em Niterói." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,7 +61,7 @@
     .hero::before { content:''; position:absolute; top:-120px; right:-120px; width:500px; height:500px; background:radial-gradient(circle,rgba(0,135,138,.08) 0%,transparent 70%); border-radius:50%; }
     .hero-inner { max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
     .hero-badge { display:inline-flex; align-items:center; gap:8px; background:var(--green-light); border:1px solid rgba(0,135,138,.2); border-radius:99px; padding:6px 14px; font-size:.8rem; font-weight:600; color:var(--green-dark); margin-bottom:20px; }
-    .hero-badge span { width:6px; height:6px; background:var(--green); border-radius:50%; animation:pulse 2s infinite; }
+    .hero-badge > span:first-child { flex-shrink:0; width:6px; height:6px; background:var(--green); border-radius:50%; animation:pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.4;} }
     .hero h1 { font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900; line-height:1.15; color:var(--navy); margin-bottom:16px; }
     .hero h1 em { font-style:normal; color:var(--green); }
@@ -240,8 +240,9 @@
     </div>
     <div class="nav-links">
       <a href="#missao" data-i18n="nav.mission">Missão</a>
+      <a href="#app" data-i18n="nav.app">O App</a>
       <a href="#tokenomics">Tokenomics</a>
-      <a href="#como-comprar" data-i18n="nav.buy">Como Comprar</a>
+      <a href="#como-participar" data-i18n="nav.join">Como Participar</a>
       <a href="#roadmap">Roadmap</a>
       <a href="#equipe" data-i18n="nav.team">Equipe</a>
     </div>
@@ -250,8 +251,8 @@
         <button class="lang-btn active" onclick="setLang('pt')">PT</button>
         <button class="lang-btn" onclick="setLang('en')">EN</button>
       </div>
-      <a href="#whitepaper" class="btn btn-outline" style="padding:10px 18px;font-size:.85rem;" data-i18n="nav.whitepaper">Whitepaper</a>
-      <a href="#como-comprar" class="btn btn-primary" style="padding:10px 18px;font-size:.85rem;" data-i18n="nav.buyBtn">Comprar PEH</a>
+      <a href="Whitepaper_PEH_v3.pdf" class="btn btn-outline" style="padding:10px 18px;font-size:.85rem;" data-i18n="nav.whitepaper">Whitepaper</a>
+      <a href="#app" class="btn btn-primary" style="padding:10px 18px;font-size:.85rem;" data-i18n="nav.appBtn">Conhecer o App</a>
     </div>
   </div>
 </nav>
@@ -260,45 +261,42 @@
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-badge"><span></span> <span data-i18n="hero.badge">Pré-venda ativa — Faixa 1</span></div>
+      <div class="hero-badge"><span></span> <span data-i18n="hero.badge">Fase 1 — App em Niterói · lançamento 2026</span></div>
       <h1 data-i18n="hero.h1">O token que <em>resgata</em> vidas de verdade</h1>
-      <p data-i18n="hero.p">PET HELP (PEH) é um ecossistema cripto-social na BSC. Cada token financiado constrói unidades reais de resgate, castração e adoção. Cada animal adotado queima tokens permanentemente.</p>
+      <p data-i18n="hero.p">PET HELP (PEH) é um ecossistema cripto-social na BSC. Começa por um app que reencontra animais perdidos e registra adoções. Cresce com uma rede de pet shops e clínicas parceiras. E chega a unidades próprias de resgate, castração e adoção — tudo registrado na blockchain.</p>
       <div class="hero-actions">
-        <a href="#como-comprar" class="btn btn-primary" data-i18n="hero.cta1">🐾 Comprar PEH agora</a>
-        <a href="#missao" class="btn btn-outline" data-i18n="hero.cta2">Conhecer a missão</a>
+        <a href="#app" class="btn btn-primary" data-i18n="hero.cta1">🐾 Conhecer o App</a>
+        <a href="Whitepaper_PEH_v3.pdf" class="btn btn-outline" data-i18n="hero.cta2">📄 Ler o Whitepaper v3</a>
       </div>
       <div class="hero-stats">
-        <div class="hero-stat"><strong>1 billion</strong><span data-i18n="hero.stat1">Supply total PEH</span></div>
-        <div class="hero-stat"><strong>200 M</strong><span data-i18n="hero.stat2">Animais a resgatar</span></div>
-        <div class="hero-stat"><strong>$0,035</strong><span data-i18n="hero.stat3">Preço Faixa 1</span></div>
+        <div class="hero-stat"><strong>1 bi</strong><span data-i18n="hero.stat1">Supply total PEH</span></div>
+        <div class="hero-stat"><strong>250 M</strong><span data-i18n="hero.stat2">PEH para a comunidade</span></div>
+        <div class="hero-stat"><strong>Niterói</strong><span data-i18n="hero.stat3">Cidade do piloto</span></div>
       </div>
     </div>
     <div class="hero-visual">
       <div class="hero-card">
-        <div class="card-label" data-i18n="card.tierLabel">Faixa de venda atual</div>
-        <div class="card-value" data-i18n="card.tierValue">Faixa 1 — Ativa</div>
-        <div class="card-sub">$0,035 USDT por PEH</div>
+        <div class="card-label" data-i18n="card.phaseLabel">Fase atual</div>
+        <div class="card-value" data-i18n="card.phaseValue">Fase 1 — O App</div>
+        <div class="card-sub" data-i18n="card.phaseSub">Comunidade primeiro. Token depois.</div>
         <div class="tiers-mini">
-          <div class="tier-pill active">F1<br>$0,035</div>
-          <div class="tier-pill">F2<br>$0,07</div>
-          <div class="tier-pill">F3<br>$0,105</div>
-          <div class="tier-pill">F4<br>$0,14</div>
-          <div class="tier-pill">F5<br>$0,175</div>
+          <div class="tier-pill active" data-i18n="pill.f1">F1<br>App</div>
+          <div class="tier-pill" data-i18n="pill.f2">F2<br>Parceiros</div>
+          <div class="tier-pill" data-i18n="pill.f3">F3<br>Unidades</div>
         </div>
       </div>
       <div class="hero-card">
-        <div class="card-label" data-i18n="card.distLabel">Distribuição automática de cada compra</div>
+        <div class="card-label" data-i18n="card.allocLabel">Alocação do supply</div>
         <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;">
-          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:var(--green);border-radius:99px;width:50%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="dist.liq">50% Liquidez</span></div>
-          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:#059669;border-radius:99px;width:35%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="dist.proj">35% Projeto Social</span></div>
-          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:#6ee7b7;border-radius:99px;width:10%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="dist.costs">10% Custos</span></div>
-          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:#d1fae5;border-radius:99px;width:5%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="dist.team">5% Equipe</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:var(--green);border-radius:99px;width:50%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="alloc.sale">50% Venda pública (rodadas)</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:#059669;border-radius:99px;width:25%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="alloc.comm">25% Pool da Comunidade</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;background:#6ee7b7;border-radius:99px;width:25%;"></div><span style="font-size:.82rem;font-weight:600;" data-i18n="alloc.impact">25% Reserva de Impacto</span></div>
         </div>
       </div>
       <div class="hero-card">
-        <div class="card-label" data-i18n="card.burnLabel">Queima por adoção</div>
-        <div class="card-value">2,5 PEH</div>
-        <div class="card-sub" data-i18n="card.burnSub">queimados permanentemente por animal adotado</div>
+        <div class="card-label" data-i18n="card.burnLabel">Recompra e queima</div>
+        <div class="card-value" data-i18n="card.burnValue">20% do Fundo</div>
+        <div class="card-sub" data-i18n="card.burnSub">todo mês, comprado no mercado e queimado — ligado à receita real</div>
       </div>
     </div>
   </div>
@@ -310,33 +308,63 @@
     <div class="tag" data-i18n="mission.tag">Nossa Missão</div>
     <h2 class="section-title" data-i18n="mission.title">Resgatar. Castrar. Adotar.</h2>
     <div class="divider"></div>
-    <p class="section-sub" data-i18n="mission.sub">200 milhões de animais vivem nas ruas. O PET HELP une tecnologia blockchain e impacto social real para mudar essa realidade — com transparência total e auditável na blockchain.</p>
+    <p class="section-sub" data-i18n="mission.sub">Zerar o abandono e os maus-tratos de animais. Parece impossível. Não é — e não vamos parar até conseguir. Cada resgate, castração e adoção fica registrado na blockchain, para sempre e para todos verem.</p>
     <div class="pillars">
-      <div class="pillar"><div class="icon">🚑</div><h3 data-i18n="pillar1.title">Resgatar</h3><p data-i18n="pillar1.text">Canis de resgate em cada unidade, operando 24h com equipe veterinária para atender emergências e resgates das ruas.</p></div>
-      <div class="pillar"><div class="icon">🏥</div><h3 data-i18n="pillar2.title">Castrar</h3><p data-i18n="pillar2.text">Centro cirúrgico próprio com foco em esterilização a custo acessível, combatendo na raiz o ciclo de abandono.</p></div>
-      <div class="pillar"><div class="icon">🏠</div><h3 data-i18n="pillar3.title">Adotar</h3><p data-i18n="pillar3.text">Cada adoção queima 2,5 PEH permanentemente na blockchain — conectando o impacto social à valorização do token.</p></div>
+      <div class="pillar"><div class="icon">🚑</div><h3 data-i18n="pillar1.title">Resgatar</h3><p data-i18n="pillar1.text">Começa no app: avistamentos no mapa reencontram animais perdidos com seus tutores. Na Fase 3, canis de resgate em cada unidade PET HELP.</p></div>
+      <div class="pillar"><div class="icon">🏥</div><h3 data-i18n="pillar2.title">Castrar</h3><p data-i18n="pillar2.text">Castração acessível via parceiros credenciados e, depois, centros cirúrgicos próprios. Cada castração comprovada queima 25 PEH on-chain.</p></div>
+      <div class="pillar"><div class="icon">🏠</div><h3 data-i18n="pillar3.title">Adotar</h3><p data-i18n="pillar3.text">Adoções registradas no app com confirmação das duas partes. Cada adoção concluída queima 100 PEH — prova pública e permanente de impacto.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- O APP -->
+<section class="section" id="app">
+  <div class="container">
+    <div class="tag" data-i18n="app.tag">Fase 1</div>
+    <h2 class="section-title" data-i18n="app.title">O App PET HELP</h2>
+    <div class="divider"></div>
+    <p class="section-sub" data-i18n="app.sub">Gratuito, sem cadastro obrigatório no primeiro uso, feito para quem vê um animal na rua e quer ajudar em menos de 10 segundos. É por aqui que a comunidade nasce — antes de qualquer token.</p>
+    <div class="dist-grid">
+      <div class="dist-card"><span class="pct">📍</span><h4 data-i18n="app.m1t">Avistamentos no mapa</h4><p data-i18n="app.m1p">Viu um animal perdido? Foto, envio, localização automática. Quem procura vê por onde ele passou.</p></div>
+      <div class="dist-card"><span class="pct">🔎</span><h4 data-i18n="app.m2t">Animais perdidos</h4><p data-i18n="app.m2p">Tutor registra o pet e recebe alerta quando um avistamento compatível aparece no raio configurado.</p></div>
+      <div class="dist-card"><span class="pct">🏠</span><h4 data-i18n="app.m3t">Adoção</h4><p data-i18n="app.m3p">ONGs, protetores e tutores publicam animais. Adoção concluída é confirmada pelas duas partes e registrada.</p></div>
+      <div class="dist-card"><span class="pct">🤝</span><h4 data-i18n="app.m4t">Rede de protetores</h4><p data-i18n="app.m4p">Protetores independentes verificados, com necessidades reais e prestação de contas pública.</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:28px;">
+      <div style="background:var(--green-light);border-radius:var(--radius);padding:20px 24px;">
+        <p style="font-size:.9rem;color:var(--green-dark);font-weight:700;margin-bottom:6px;" data-i18n="app.ptsT">🎯 Pontos por colaboração</p>
+        <p style="font-size:.85rem;color:var(--gray);" data-i18n="app.ptsP">Avistamento confirmado, adoção concluída, castração comprovada — tudo gera pontos, trocáveis por descontos em parceiros. Toda ação exige validação de uma segunda parte. Na Fase 2, os pontos passam a ter lastro em PEH.</p>
+      </div>
+      <div style="background:var(--green-light);border-radius:var(--radius);padding:20px 24px;">
+        <p style="font-size:.9rem;color:var(--green-dark);font-weight:700;margin-bottom:6px;" data-i18n="app.whyT">📌 Por que Niterói</p>
+        <p style="font-size:.85rem;color:var(--gray);" data-i18n="app.whyP">Um animal perdido em Niterói não interessa a quem está em Manaus. Densidade por bairro vale mais que alcance nacional. O piloto concentra tudo numa cidade, com parceiros fechados antes do lançamento, e só expande com métricas públicas.</p>
+      </div>
+      <div style="background:var(--green-light);border-radius:var(--radius);padding:20px 24px;">
+        <p style="font-size:.9rem;color:var(--green-dark);font-weight:700;margin-bottom:6px;" data-i18n="app.waT">💬 Canais por bairro</p>
+        <p style="font-size:.85rem;color:var(--gray);" data-i18n="app.waP">Cada avistamento e animal perdido é replicado no grupo de WhatsApp do bairro, mantido pelo projeto. O app alimenta o grupo; o grupo traz gente para o app.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- UNIDADE -->
-<section class="section" id="unidade">
+<section class="section section-alt" id="unidade">
   <div class="container">
-    <div class="tag" data-i18n="unit.tag">O Modelo</div>
+    <div class="tag" data-i18n="unit.tag">Fase 3</div>
     <h2 class="section-title" data-i18n="unit.title">Cada unidade, um complexo completo</h2>
     <div class="divider"></div>
-    <p class="section-sub" data-i18n="unit.sub">Cada unidade PET HELP é um complexo integrado — pet shop, clínica 24h, centro cirúrgico e canil de resgate em um único espaço.</p>
+    <p class="section-sub" data-i18n="unit.sub">Na maturidade do ecossistema, unidades PET HELP próprias — pet shop, clínica, centro cirúrgico e canil de resgate em um único espaço. Financiadas pelas rodadas de captação e pelo Fundo, com localização decidida via DAO.</p>
     <div class="unit-grid">
       <div class="unit-list">
         <div class="unit-item"><div class="ui">🛒</div><div><strong data-i18n="unit.s1t">Pet Shop Completo</strong><span data-i18n="unit.s1d">Rações, acessórios, farmácia veterinária popular</span></div></div>
-        <div class="unit-item"><div class="ui">🩺</div><div><strong data-i18n="unit.s2t">Clínica Veterinária 24h</strong><span data-i18n="unit.s2d">Consultas, vacinas, exames e diagnóstico por imagem</span></div></div>
-        <div class="unit-item"><div class="ui">🔬</div><div><strong data-i18n="unit.s3t">Centro Cirúrgico</strong><span data-i18n="unit.s3d">Cirurgias eletivas e de emergência, UTI e internação</span></div></div>
-        <div class="unit-item"><div class="ui">🐕</div><div><strong data-i18n="unit.s4t">Canil de Resgate</strong><span data-i18n="unit.s4d">Acolhimento de resgatados e campanhas mensais de adoção</span></div></div>
+        <div class="unit-item"><div class="ui">🩺</div><div><strong data-i18n="unit.s2t">Clínica Veterinária</strong><span data-i18n="unit.s2d">Consultas, vacinas, exames e diagnóstico por imagem</span></div></div>
+        <div class="unit-item"><div class="ui">🔬</div><div><strong data-i18n="unit.s3t">Centro Cirúrgico</strong><span data-i18n="unit.s3d">Cirurgias eletivas e de emergência, internação</span></div></div>
+        <div class="unit-item"><div class="ui">🐕</div><div><strong data-i18n="unit.s4t">Canil de Resgate</strong><span data-i18n="unit.s4d">Acolhimento de resgatados e campanhas de adoção</span></div></div>
         <div class="unit-item"><div class="ui">✂️</div><div><strong data-i18n="unit.s5t">Banho & Tosa</strong><span data-i18n="unit.s5d">Com desconto para pagamentos em PEH</span></div></div>
         <div class="unit-item"><div class="ui">💳</div><div><strong data-i18n="unit.s6t">Plano de Saúde Vet</strong><span data-i18n="unit.s6d">Mensalidades com desconto para holders do token</span></div></div>
       </div>
       <div>
-        <p style="font-size:.85rem;color:var(--gray);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;" data-i18n="unit.projTitle">Projeção financeira mensal / unidade</p>
+        <p style="font-size:.85rem;color:var(--gray);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;" data-i18n="unit.projTitle">Projeção conservadora mensal / unidade</p>
         <div class="unit-projections">
           <div class="proj-row"><strong data-i18n="proj.r1">Pet Shop</strong><span>R$ 60.000</span></div>
           <div class="proj-row"><strong data-i18n="proj.r2">Consultas veterinárias</strong><span>R$ 40.000</span></div>
@@ -345,17 +373,17 @@
           <div class="proj-row"><strong data-i18n="proj.r5">Farmácia veterinária</strong><span>R$ 15.000</span></div>
           <div class="proj-row"><strong data-i18n="proj.r6">Internação / canil</strong><span>R$ 10.000</span></div>
           <div class="proj-row total"><strong data-i18n="proj.gross">Total bruto</strong><span>R$ 175.000</span></div>
-          <div class="proj-row"><strong data-i18n="proj.costs">Custos operacionais</strong><span style="color:#ef4444;">− R$ 85.000</span></div>
-          <div class="proj-row" style="background:var(--green-light);border-color:var(--green);"><strong data-i18n="proj.net">Lucro líquido / unidade</strong><span style="color:var(--green);">R$ 90.000</span></div>
+          <div class="proj-row"><strong data-i18n="proj.costs">Custos operacionais</strong><span style="color:#ef4444;">− R$ 140.000</span></div>
+          <div class="proj-row" style="background:var(--green-light);border-color:var(--green);"><strong data-i18n="proj.net">Lucro líquido / unidade</strong><span style="color:var(--green);">R$ 35.000</span></div>
         </div>
-        <p style="font-size:.78rem;color:var(--gray);margin-top:8px;" data-i18n="unit.note">* Sem aluguel (imóvel próprio) · energia solar instalada</p>
+        <p style="font-size:.78rem;color:var(--gray);margin-top:8px;" data-i18n="unit.note">* Margem de ~20%, média do varejo e serviços veterinários. Valores ilustrativos.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TOKENOMICS -->
-<section class="section section-alt" id="tokenomics">
+<section class="section" id="tokenomics">
   <div class="container">
     <div class="tag" data-i18n="tok.tag">Tokenomics</div>
     <h2 class="section-title" data-i18n="tok.title">Supply e distribuição</h2>
@@ -364,171 +392,108 @@
       <div class="token-chart-wrap">
         <svg class="donut-svg" viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="46" fill="none" stroke="#e5e7eb" stroke-width="16"/>
-          <circle cx="60" cy="60" r="46" fill="none" stroke="var(--green)" stroke-width="16" stroke-dasharray="144.5 144.5" stroke-dashoffset="36" stroke-linecap="round"/>
-          <circle cx="60" cy="60" r="46" fill="none" stroke="#059669" stroke-width="16" stroke-dasharray="144.5 144.5" stroke-dashoffset="180.5" stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="46" fill="none" stroke="var(--green)" stroke-width="16" stroke-dasharray="144.5 289" transform="rotate(-90 60 60)"/>
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#059669" stroke-width="16" stroke-dasharray="72.25 289" transform="rotate(90 60 60)"/>
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#6ee7b7" stroke-width="16" stroke-dasharray="72.25 289" transform="rotate(180 60 60)"/>
         </svg>
         <div class="donut-label"><strong>1 Bi</strong><span data-i18n="tok.total">PEH Total</span></div>
         <div class="chart-legend">
-          <div class="legend-item"><div class="legend-dot" style="background:var(--green);"></div><span data-i18n="tok.leg1">Venda pública (5 faixas)</span><strong>500M</strong></div>
-          <div class="legend-item"><div class="legend-dot" style="background:#059669;"></div><span data-i18n="tok.leg2">Bloqueados (queima por adoção)</span><strong>500M</strong></div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--green);"></div><span data-i18n="tok.leg1">Venda pública (rodadas)</span><strong>500M</strong></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#059669;"></div><span data-i18n="tok.leg2">Pool da Comunidade (app)</span><strong>250M</strong></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#6ee7b7;"></div><span data-i18n="tok.leg3">Reserva de Impacto</span><strong>250M</strong></div>
         </div>
       </div>
       <div>
-        <p style="font-size:.85rem;color:var(--gray);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;" data-i18n="tok.tiersTitle">Faixas de venda pública</p>
+        <p style="font-size:.85rem;color:var(--gray);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;" data-i18n="tok.tiersTitle">Rodadas de venda pública</p>
         <div class="tiers-table">
-          <div class="tier-row"><span class="tier-num" data-i18n="tier.t1">Faixa 1</span><span class="tier-range" data-i18n="tier.r1">0 a 100.000.000 tokens</span><span class="tier-price">$0,035</span></div>
-          <div class="tier-row"><span class="tier-num" data-i18n="tier.t2">Faixa 2</span><span class="tier-range" data-i18n="tier.r2">100M a 200.000.000 tokens</span><span class="tier-price">$0,070</span></div>
-          <div class="tier-row"><span class="tier-num" data-i18n="tier.t3">Faixa 3</span><span class="tier-range" data-i18n="tier.r3">200M a 300.000.000 tokens</span><span class="tier-price">$0,105</span></div>
-          <div class="tier-row"><span class="tier-num" data-i18n="tier.t4">Faixa 4</span><span class="tier-range" data-i18n="tier.r4">300M a 400.000.000 tokens</span><span class="tier-price">$0,140</span></div>
-          <div class="tier-row"><span class="tier-num" data-i18n="tier.t5">Faixa 5</span><span class="tier-range" data-i18n="tier.r5">400M a 500.000.000 tokens</span><span class="tier-price">$0,175</span></div>
+          <div class="tier-row"><span class="tier-num" data-i18n="round.t1">Rodada 1</span><span class="tier-range" data-i18n="round.r1">75M PEH · R$ 15M · app operando com métricas públicas</span><span class="tier-price">R$ 0,20</span></div>
+          <div class="tier-row"><span class="tier-num" data-i18n="round.t2">Rodada 2</span><span class="tier-range" data-i18n="round.r2">60M PEH · R$ 15M · rede de parceiros e cashback ativos</span><span class="tier-price">R$ 0,25</span></div>
+          <div class="tier-row"><span class="tier-num" data-i18n="round.t3">Rodada 3</span><span class="tier-range" data-i18n="round.r3">50M PEH · R$ 15M · segunda cidade</span><span class="tier-price">R$ 0,30</span></div>
+          <div class="tier-row"><span class="tier-num" data-i18n="round.t4">Rodada 4+</span><span class="tier-range" data-i18n="round.r4">restante · unidades próprias em operação</span><span class="tier-price" data-i18n="round.p4">progressivo</span></div>
         </div>
         <div style="background:var(--green-light);border-radius:var(--radius);padding:14px 18px;margin-top:16px;">
-          <p style="font-size:.85rem;color:var(--green-dark);font-weight:600;" data-i18n="tok.taxTitle">💡 Taxa de 3% em todas as transações DEX</p>
-          <p style="font-size:.82rem;color:var(--gray);margin-top:4px;" data-i18n="tok.taxSub">1,5% redistribuído aos holders · 1,5% para o fundo de expansão</p>
+          <p style="font-size:.85rem;color:var(--green-dark);font-weight:600;" data-i18n="tok.taxTitle">💡 Taxa de 3% em toda transação de PEH</p>
+          <p style="font-size:.82rem;color:var(--gray);margin-top:4px;" data-i18n="tok.taxSub">1,5% redistribuído aos holders em USDT · 1,5% para o Fundo PET HELP</p>
+        </div>
+        <div style="background:#fff7ed;border:1px solid #fdba74;border-radius:var(--radius);padding:14px 18px;margin-top:12px;">
+          <p style="font-size:.82rem;color:#9a3412;" data-i18n="tok.cvm">Rodadas para o público seguem a Resolução CVM 88 (teto de R$ 15M por oferta, intervalo de 120 dias, limite por investidor). Investidores profissionais: oferta com esforços restritos.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COMO COMPRAR -->
-<section class="section" id="como-comprar">
+<!-- COMO PARTICIPAR -->
+<section class="section section-alt" id="como-participar">
   <div class="container">
-    <div class="tag" data-i18n="buy.tag">Como Comprar</div>
-    <h2 class="section-title" data-i18n="buy.title">Simples e seguro em 4 passos</h2>
+    <div class="tag" data-i18n="join.tag">Como Participar</div>
+    <h2 class="section-title" data-i18n="join.title">Do app ao token, em 4 passos</h2>
     <div class="divider"></div>
-    <p class="section-sub" data-i18n="buy.sub">Você precisa de uma carteira MetaMask e USDT na rede BSC. O processo leva menos de 2 minutos.</p>
+    <p class="section-sub" data-i18n="join.sub">Você não precisa de carteira cripto para começar. Precisa de um celular e vontade de ajudar.</p>
     <div class="steps">
-      <div class="step"><div class="step-num">1</div><h4 data-i18n="step1.t">Instale a MetaMask</h4><p data-i18n="step1.p">Baixe a extensão MetaMask e adicione a rede BSC (Binance Smart Chain).</p></div>
-      <div class="step"><div class="step-num">2</div><h4 data-i18n="step2.t">Tenha USDT na BSC</h4><p data-i18n="step2.p">Compre BNB em uma exchange, converta para USDT na PancakeSwap.</p></div>
-      <div class="step"><div class="step-num">3</div><h4 data-i18n="step3.t">Conecte sua carteira</h4><p data-i18n="step3.p">Clique em "Conectar MetaMask" neste site e aprove a conexão.</p></div>
-      <div class="step"><div class="step-num">4</div><h4 data-i18n="step4.t">Compre seus PEH</h4><p data-i18n="step4.p">Digite o valor em USDT, confirme a transação e receba PEH instantaneamente.</p></div>
+      <div class="step"><div class="step-num">1</div><h4 data-i18n="step1.t">Use o app</h4><p data-i18n="step1.p">Registre avistamentos, ajude a reencontrar animais, publique ou adote. Gratuito, em Niterói.</p></div>
+      <div class="step"><div class="step-num">2</div><h4 data-i18n="step2.t">Acumule pontos</h4><p data-i18n="step2.p">Cada ação validada gera pontos, trocáveis por descontos em pet shops e clínicas parceiras.</p></div>
+      <div class="step"><div class="step-num">3</div><h4 data-i18n="step3.t">Participe da Rodada 1</h4><p data-i18n="step3.p">A oferta pública acontece em plataforma autorizada pela CVM, com KYC. Seus pontos viram PEH do Pool da Comunidade.</p></div>
+      <div class="step"><div class="step-num">4</div><h4 data-i18n="step4.t">Receba cashback</h4><p data-i18n="step4.p">Holders recebem 50% da receita do ecossistema em USDT, proporcional ao saldo de PEH.</p></div>
     </div>
-    <!-- ── WEB3 BUY WIDGET ─────────────────────────────── -->
     <div class="buy-widget-wrap">
-      <div class="buy-widget" id="buyWidget">
-
-        <!-- ESTADO: MetaMask não instalada -->
-        <div id="w-no-metamask" style="display:none;text-align:center;padding:16px 0;">
-          <p style="font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">🦊 MetaMask não detectada</p>
-          <p style="font-size:.9rem;color:var(--gray);margin-bottom:20px;" data-i18n="w.noMeta">Instale a extensão MetaMask para comprar PEH diretamente neste site.</p>
-          <div class="w-install">
-            <a href="https://metamask.io/download/" target="_blank" rel="noopener">→ Instalar MetaMask</a>
-          </div>
-        </div>
-
-        <!-- ESTADO: Não conectado -->
-        <div id="w-disconnected" style="text-align:center;padding:16px 0;">
-          <p style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px;" data-i18n="w.connectTitle">Conecte sua carteira para comprar PEH</p>
-          <p style="font-size:.85rem;color:var(--gray);margin-bottom:24px;" data-i18n="w.connectSub">Você precisa de MetaMask com USDT na rede BSC.</p>
-          <button class="w-btn w-btn-connect" onclick="connectWallet()">🦊 <span data-i18n="w.connectBtn">Conectar MetaMask</span></button>
-          <p class="w-msg" id="w-connect-msg"></p>
-        </div>
-
-        <!-- ESTADO: Rede errada -->
-        <div id="w-wrong-network" style="display:none;text-align:center;padding:16px 0;">
-          <p style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px;" data-i18n="w.wrongNet">⚠️ Rede incorreta</p>
-          <p style="font-size:.85rem;color:var(--gray);margin-bottom:24px;" data-i18n="w.wrongNetSub">Troque para a Binance Smart Chain (BSC Mainnet) para continuar.</p>
-          <button class="w-btn w-btn-network" onclick="switchToBSC()">🔄 <span data-i18n="w.switchBtn">Trocar para BSC</span></button>
-        </div>
-
-        <!-- ESTADO: Conectado — formulário de compra -->
-        <div id="w-connected" style="display:none;">
-          <!-- Info da faixa e progresso -->
-          <div class="w-tier-badge">
-            <span class="dot"></span>
-            <span data-i18n="w.presale">Pré-venda</span> — <span data-i18n="w.tier">Faixa</span> <span id="w-tier-num">1</span> &nbsp;·&nbsp; $<span id="w-price-val">0.035</span> USDT/PEH
-          </div>
-          <div class="w-progress-label">
-            <span data-i18n="w.sold">Vendidos</span>: <span id="w-sold">0</span> PEH
-            <span id="w-pct">0%</span>
-          </div>
-          <div class="w-progress-bar"><div class="w-progress-fill" id="w-fill"></div></div>
-
-          <!-- Carteira conectada -->
-          <div class="w-wallet-info">
-            <span class="w-dot"></span>
-            <span data-i18n="w.connected">Conectado</span>: &nbsp;<strong id="w-addr-short">0x...</strong>
-          </div>
-
-          <!-- Input USDT -->
-          <label style="font-size:.82rem;font-weight:600;color:var(--gray);display:block;margin-bottom:6px;" data-i18n="w.usdtLabel">Valor em USDT</label>
-          <div class="w-input-row">
-            <span class="w-currency">USDT</span>
-            <input type="number" id="w-usdt-input" min="1" step="any" placeholder="Ex: 100" oninput="onUsdtInput()" />
-          </div>
-          <p class="w-balance" data-i18n-prefix="w.balance"><span data-i18n="w.balance">Saldo:</span> <span id="w-usdt-bal">—</span> USDT</p>
-
-          <!-- Estimativa de tokens -->
-          <div class="w-estimate-box">
-            <span class="w-est-label" data-i18n="w.youReceive">Você recebe (estimado):</span>
-            <span class="w-est-value" id="w-peh-estimate">— PEH</span>
-          </div>
-
-          <!-- Botões -->
-          <button class="w-btn w-btn-approve" id="w-approve-btn" onclick="doApprove()" style="display:none;margin-bottom:10px;" data-i18n="w.approveBtn">✅ Aprovar USDT</button>
-          <button class="w-btn w-btn-buy"    id="w-buy-btn"    onclick="doBuy()"    style="display:none;" data-i18n="w.buyBtn">🐾 Comprar PEH</button>
-
-          <p class="w-msg" id="w-status-msg"></p>
-          <a class="w-tx-link" id="w-tx-link" href="#" target="_blank" rel="noopener" style="display:none;" data-i18n="w.viewTx">Ver transação no BscScan →</a>
-        </div>
-
+      <div class="buy-widget" style="text-align:center;padding:28px 24px;">
+        <p style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;" data-i18n="join.noticeT">⚖️ Não há venda de PEH neste site</p>
+        <p style="font-size:.88rem;color:var(--gray);max-width:620px;margin:0 auto;" data-i18n="join.noticeP">O PEH é ofertado como valor mobiliário. A Rodada 1 ocorrerá exclusivamente por meio de plataforma de crowdfunding autorizada pela CVM, com material de oferta próprio. O link será publicado aqui quando a rodada abrir. Desconfie de qualquer outro canal oferecendo PEH.</p>
       </div>
-      <p style="text-align:center;font-size:.78rem;color:var(--gray);margin-top:14px;" data-i18n="buy.note">Contrato auditável · Código verificado no BscScan</p>
     </div>
-    <!-- ── FIM DO WIDGET ──────────────────────────────── -->
   </div>
 </section>
 
 <!-- DISTRIBUIÇÃO -->
-<section class="section section-alt" id="distribuicao">
+<section class="section" id="distribuicao">
   <div class="container">
     <div class="tag" data-i18n="distSec.tag">Transparência Total</div>
-    <h2 class="section-title" data-i18n="distSec.title">Cada USDT distribuído na hora</h2>
+    <h2 class="section-title" data-i18n="distSec.title">Cada rodada, distribuída à vista</h2>
     <div class="divider"></div>
-    <p class="section-sub" data-i18n="distSec.sub">Quando você compra PEH, o valor pago em USDT é dividido automaticamente pelo contrato, sem intermediários.</p>
+    <p class="section-sub" data-i18n="distSec.sub">O valor captado em cada rodada segue uma divisão fixa e pública. Toda movimentação do Fundo fica no portal de transparência, com registro on-chain.</p>
     <div class="dist-grid">
-      <div class="dist-card"><span class="pct">50%</span><h4 data-i18n="d1.t">Liquidez DEX</h4><p data-i18n="d1.p">Acumulado e injetado na pool PancakeSwap no lançamento do token.</p></div>
-      <div class="dist-card"><span class="pct">35%</span><h4 data-i18n="d2.t">Projeto Social</h4><p data-i18n="d2.p">Financiamento imediato para construção das unidades PET HELP.</p></div>
-      <div class="dist-card"><span class="pct">10%</span><h4 data-i18n="d3.t">Custos Operacionais</h4><p data-i18n="d3.p">Plataforma, segurança, sistemas de gestão e gateway de pagamento.</p></div>
-      <div class="dist-card"><span class="pct">5%</span><h4 data-i18n="d4.t">Equipe</h4><p data-i18n="d4.p">Equipe idealizadora e operacional responsável pelo projeto.</p></div>
+      <div class="dist-card"><span class="pct">50%</span><h4 data-i18n="d1.t">Liquidez</h4><p data-i18n="d1.p">Reserva de liquidez para o mercado secundário, constituída de forma parcial e progressiva a cada rodada.</p></div>
+      <div class="dist-card"><span class="pct">35%</span><h4 data-i18n="d2.t">Projeto</h4><p data-i18n="d2.p">App, rede de parceiros, unidades PET HELP e repasse à ONG.</p></div>
+      <div class="dist-card"><span class="pct">10%</span><h4 data-i18n="d3.t">Operação</h4><p data-i18n="d3.p">Plataforma, conformidade regulatória, auditoria e segurança.</p></div>
+      <div class="dist-card"><span class="pct">5%</span><h4 data-i18n="d4.t">Equipe</h4><p data-i18n="d4.p">Equipe fundadora, com vesting de 24 meses.</p></div>
     </div>
   </div>
 </section>
 
 <!-- QUEIMA -->
-<section class="section" id="queima">
+<section class="section section-alt" id="queima">
   <div class="container">
     <div class="burn-box">
-      <h3 data-i18n="burn.title">🔥 O mecanismo que une missão e valor</h3>
-      <p data-i18n="burn.p">500 milhões de tokens estão bloqueados e só serão destruídos de uma forma: quando um animal for adotado. Cada adoção queima 2,5 PEH de forma automática, irreversível e verificável na blockchain.</p>
+      <h3 data-i18n="burn.title">🔥 Dois mecanismos, duas funções</h3>
+      <p data-i18n="burn.p">A queima por impacto é o registro: cada adoção e castração fica gravada na blockchain, verificável por qualquer pessoa. A recompra é a economia: 20% do Fundo compra PEH no mercado todo mês e queima — escassez ligada à receita real, não a uma promessa.</p>
       <div class="burn-stats">
-        <div class="burn-stat"><strong>2,5 PEH</strong><span data-i18n="burn.s1">queimados por adoção</span></div>
-        <div class="burn-stat"><strong>200 M</strong><span data-i18n="burn.s2">animais a atender</span></div>
-        <div class="burn-stat"><strong>500 M</strong><span data-i18n="burn.s3">tokens reservados para queima</span></div>
+        <div class="burn-stat"><strong>100 PEH</strong><span data-i18n="burn.s1">queimados por adoção concluída</span></div>
+        <div class="burn-stat"><strong>25 PEH</strong><span data-i18n="burn.s2">queimados por castração comprovada</span></div>
+        <div class="burn-stat"><strong>20%</strong><span data-i18n="burn.s3">do Fundo em recompra e queima mensal</span></div>
       </div>
-      <p style="margin-top:28px;font-style:italic;opacity:.85;font-size:.95rem;" data-i18n="burn.quote">"Quando o último animal abandonado encontrar uma família, o último token será queimado."</p>
+      <p style="margin-top:28px;font-style:italic;opacity:.85;font-size:.95rem;" data-i18n="burn.quote">"Quando o último animal abandonado encontrar uma família, a missão estará cumprida. Até lá, cada adoção fica registrada — para sempre, e para todos verem."</p>
     </div>
   </div>
 </section>
 
 <!-- ROADMAP -->
-<section class="section section-alt" id="roadmap">
+<section class="section" id="roadmap">
   <div class="container">
     <div class="tag">Roadmap</div>
     <h2 class="section-title" data-i18n="rm.title">O caminho até a missão cumprida</h2>
     <div class="divider"></div>
     <div class="roadmap-grid">
-      <div class="road-card"><div class="road-period">2026 — Q2/Q3</div><h4 data-i18n="rm1.t">Fase 1 — Fundação</h4><ul><li data-i18n="rm1.l1">Constituição jurídica (Holding + ONG + Offshore)</li><li data-i18n="rm1.l2">Auditoria do smart contract</li><li data-i18n="rm1.l3">Lançamento da plataforma</li><li data-i18n="rm1.l4">Início da pré-venda (Faixa 1)</li></ul></div>
-      <div class="road-card"><div class="road-period">2026 — Q3/Q4</div><h4 data-i18n="rm2.t">Fase 2 — Primeiras Unidades</h4><ul><li data-i18n="rm2.l1">Construção das primeiras 4–14 unidades</li><li data-i18n="rm2.l2">Início dos resgates e adoções</li><li data-i18n="rm2.l3">Primeiras queimas on-chain</li><li data-i18n="rm2.l4">Pré-venda Faixas 2 e 3</li></ul></div>
-      <div class="road-card"><div class="road-period">2027</div><h4 data-i18n="rm3.t">Fase 3 — Expansão Nacional</h4><ul><li data-i18n="rm3.l1">Conclusão da venda pública</li><li data-i18n="rm3.l2">Lançamento PEH na PancakeSwap</li><li data-i18n="rm3.l3">Início do cashback para holders</li><li data-i18n="rm3.l4">30+ unidades no Brasil</li></ul></div>
-      <div class="road-card"><div class="road-period">2028+</div><h4 data-i18n="rm4.t">Fase 4 — Expansão Global</h4><ul><li data-i18n="rm4.l1">Internacionalização do projeto</li><li data-i18n="rm4.l2">Implementação da DAO</li><li data-i18n="rm4.l3">Meta: 200 milhões de animais</li><li data-i18n="rm4.l4">Queima total dos 500M tokens</li></ul></div>
+      <div class="road-card"><div class="road-period">2026 — T4</div><h4 data-i18n="rm1.t">Fase 1 — O App</h4><ul><li data-i18n="rm1.l1">Lançamento em Niterói: avistamentos, perdidos, adoção</li><li data-i18n="rm1.l2">Parceiros locais fechados</li><li data-i18n="rm1.l3">Grupos por bairro ativos</li><li data-i18n="rm1.l4">Constituição da ONG</li></ul></div>
+      <div class="road-card"><div class="road-period">2027 — T1/T2</div><h4 data-i18n="rm2.t">Estrutura e Rodada 1</h4><ul><li data-i18n="rm2.l1">Módulo de protetores e métricas públicas</li><li data-i18n="rm2.l2">Holding, parecer jurídico, auditoria do contrato</li><li data-i18n="rm2.l3">Rodada 1 (R$ 15M) via plataforma CVM 88</li><li data-i18n="rm2.l4">Pontos lastreados em PEH; primeiras queimas</li></ul></div>
+      <div class="road-card"><div class="road-period">2027 — T3/T4</div><h4 data-i18n="rm3.t">Fase 2 — Rede de Parceiros</h4><ul><li data-i18n="rm3.l1">Parceiros aceitando PEH</li><li data-i18n="rm3.l2">Início do cashback em USDT</li><li data-i18n="rm3.l3">Primeira recompra e queima</li><li data-i18n="rm3.l4">Expansão para o Rio de Janeiro</li></ul></div>
+      <div class="road-card"><div class="road-period">2028+</div><h4 data-i18n="rm4.t">Fase 3 — Unidades</h4><ul><li data-i18n="rm4.l1">Rodadas 2 e 3</li><li data-i18n="rm4.l2">DAO de governança</li><li data-i18n="rm4.l3">Primeira unidade PET HELP</li><li data-i18n="rm4.l4">Expansão nacional e internacionalização do app</li></ul></div>
     </div>
   </div>
 </section>
 
 <!-- EQUIPE -->
-<section class="section" id="equipe">
+<section class="section section-alt" id="equipe">
   <div class="container">
     <div class="tag" data-i18n="team.tag">Equipe</div>
     <h2 class="section-title" data-i18n="team.title">As pessoas por trás da missão</h2>
@@ -543,7 +508,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="section section-alt" id="faq">
+<section class="section" id="faq">
   <div class="container" style="text-align:center;">
     <div class="tag">FAQ</div>
     <h2 class="section-title" data-i18n="faq.title">Perguntas frequentes</h2>
@@ -551,11 +516,12 @@
   </div>
   <div class="container">
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q1">Como o dinheiro da minha compra é utilizado?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a1">Automaticamente e instantaneamente pelo contrato: 50% vai para a carteira de liquidez do PancakeSwap, 35% para construção das unidades PET HELP, 10% para custos operacionais e 5% para a equipe. Tudo verificável na blockchain.</div></div>
-      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q2">O que garante a queima dos tokens?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a2">O smart contract na BSC. Os 500 milhões de tokens estão bloqueados e só saem quando a função registerAdoption() é chamada pelo oracle autorizado. Cada chamada queima 2,5 PEH de forma irreversível para o endereço 0xdEaD.</div></div>
-      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q3">Quando posso vender meus tokens no mercado?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a3">O trading na DEX (PancakeSwap) será habilitado somente após a venda completa dos 500 milhões de tokens da pré-venda, garantindo uma pool de liquidez robusta no lançamento.</div></div>
-      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q4">Como funciona o cashback para holders?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a4">Após o lançamento na DEX, 1,5% de cada transação vai para a carteira de recompensas e é distribuído em USDT proporcionalmente ao saldo de PEH de cada holder.</div></div>
-      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q5">O contrato foi auditado?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a5">O código-fonte será verificado e publicado no BscScan antes do início da pré-venda. A auditoria profissional por empresa especializada está prevista no roadmap.</div></div>
+      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q1">Por que o app vem antes do token?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a1">Porque token sem produto é promessa. O app cria comunidade, gera adoções reais e produz as métricas que justificam a Rodada 1. Quem investir compra algo que já funciona.</div></div>
+      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q2">Posso comprar PEH agora?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a2">Não. A Rodada 1 abre após o app estar operando em Niterói com métricas públicas, e ocorrerá exclusivamente em plataforma de crowdfunding autorizada pela CVM. Não há venda neste site nem por contrato direto.</div></div>
+      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q3">O PEH é um valor mobiliário?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a3">Sim, e tratamos como tal. O PEH dá direito a participação em receita (cashback em USDT), então a oferta segue a Lei 6.385/76 e a Resolução CVM 88. Preferimos operar dentro da regra a depender de interpretações.</div></div>
+      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q4">Como funciona o cashback?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a4">50% da receita líquida do ecossistema — taxa de 3%, comissão de parceiros e, na Fase 3, lucro das unidades — é distribuída em USDT aos holders, proporcional ao saldo de PEH. Começa na Fase 2, com a rede de parceiros ativa. Valores não são garantidos.</div></div>
+      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q5">Como ganho tokens usando o app?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a5">250 milhões de PEH ficam reservados ao Pool da Comunidade, liberados em 10 anos, só por ações validadas: avistamento confirmado pelo tutor, adoção concluída, castração comprovada. Quem ajudou antes do token existir recebe os tokens correspondentes.</div></div>
+      <div class="faq-item"><div class="faq-q"><span data-i18n="faq.q6">Quando o PEH vai para a PancakeSwap?</span><span class="arrow">+</span></div><div class="faq-a" data-i18n="faq.a6">A negociação secundária base ocorre no ambiente da plataforma autorizada. Listagem em DEX pública depende de parecer jurídico sobre negociação de valor mobiliário fora de ambiente regulado. Não prometemos data.</div></div>
     </div>
   </div>
 </section>
@@ -564,10 +530,10 @@
 <section class="cta-section" id="whitepaper">
   <div class="container">
     <h2 data-i18n="cta.title">Faça parte da missão</h2>
-    <p data-i18n="cta.sub">Compre PEH na Faixa 1 — o menor preço da pré-venda — e ajude a mudar a vida de 200 milhões de animais.</p>
+    <p data-i18n="cta.sub">Comece pelo app. Ajude a reencontrar um animal, registre uma adoção, apoie um protetor. O token é consequência.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="#como-comprar" class="btn btn-primary" style="font-size:1rem;padding:16px 36px;" data-i18n="cta.buy">🐾 Comprar PEH — Faixa 1</a>
-      <a href="Whitepaper_PEH_v2.pdf" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;" data-i18n="cta.wp">📄 Ler o Whitepaper</a>
+      <a href="#app" class="btn btn-primary" style="font-size:1rem;padding:16px 36px;" data-i18n="cta.app">🐾 Conhecer o App</a>
+      <a href="Whitepaper_PEH_v3.pdf" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;" data-i18n="cta.wp">📄 Ler o Whitepaper v3</a>
     </div>
   </div>
 </section>
@@ -578,14 +544,15 @@
     <div class="footer-brand">
       <div class="logo-text">🐾 PET HELP</div>
       <div class="slogan" data-i18n="footer.slogan">Resgatar. Castrar. Adotar.</div>
-      <div style="margin-top:12px;"><span class="rede-tag">BSC · BEP-20</span><span class="rede-tag" style="margin-left:6px;">PancakeSwap</span></div>
+      <div style="margin-top:12px;"><span class="rede-tag">BSC · BEP-20</span><span class="rede-tag" style="margin-left:6px;">CVM 88</span></div>
     </div>
     <div>
       <p style="font-size:.8rem;font-weight:700;color:#fff;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em;" data-i18n="footer.nav">Navegação</p>
       <div class="footer-links">
         <a href="#missao" data-i18n="nav.mission">Missão</a>
+        <a href="#app" data-i18n="nav.app">O App</a>
         <a href="#tokenomics">Tokenomics</a>
-        <a href="#como-comprar" data-i18n="nav.buy">Como Comprar</a>
+        <a href="#como-participar" data-i18n="nav.join">Como Participar</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#equipe" data-i18n="nav.team">Equipe</a>
       </div>
@@ -593,8 +560,8 @@
     <div>
       <p style="font-size:.8rem;font-weight:700;color:#fff;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em;" data-i18n="footer.docs">Documentos</p>
       <div class="footer-links">
-        <a href="Whitepaper_PEH_v2.pdf">Whitepaper v2.0</a>
-        <a href="https://testnet.bscscan.com/address/0x036108Ce9A7fE7c28E61482CA61F6e3720535BF2" target="_blank" rel="noopener" data-i18n="footer.contract">Contrato no BscScan</a>
+        <a href="Whitepaper_PEH_v3.pdf">Whitepaper v3.0</a>
+        <a href="https://testnet.bscscan.com/address/0x036108Ce9A7fE7c28E61482CA61F6e3720535BF2" target="_blank" rel="noopener" data-i18n="footer.contract">Contrato (testnet) no BscScan</a>
         <a href="#faq">FAQ</a>
       </div>
     </div>
@@ -609,207 +576,185 @@
   </div>
   <div class="footer-bottom">
     <span>© 2026 PET HELP.</span>
-    <span data-i18n="footer.legal">Token PEH não é um valor mobiliário. Leia o whitepaper antes de investir.</span>
+    <span data-i18n="footer.legal">O PEH é ofertado como valor mobiliário, exclusivamente via plataforma autorizada pela CVM. Leia o whitepaper, inclusive a seção de riscos.</span>
   </div>
 </footer>
 
 <script>
 const translations = {
   pt: {
-    "nav.mission":"Missão","nav.buy":"Como Comprar","nav.team":"Equipe",
-    "nav.whitepaper":"Whitepaper","nav.buyBtn":"Comprar PEH",
-    "hero.badge":"Pré-venda ativa — Faixa 1",
+    "nav.mission":"Missão","nav.app":"O App","nav.join":"Como Participar","nav.team":"Equipe",
+    "nav.whitepaper":"Whitepaper","nav.appBtn":"Conhecer o App",
+    "hero.badge":"Fase 1 — App em Niterói · lançamento 2026",
     "hero.h1":"O token que <em>resgata</em> vidas de verdade",
-    "hero.p":"PET HELP (PEH) é um ecossistema cripto-social na BSC. Cada token financiado constrói unidades reais de resgate, castração e adoção. Cada animal adotado queima tokens permanentemente.",
-    "hero.cta1":"🐾 Comprar PEH agora","hero.cta2":"Conhecer a missão",
-    "hero.stat1":"Supply total PEH","hero.stat2":"Animais a resgatar","hero.stat3":"Preço Faixa 1",
-    "card.tierLabel":"Faixa de venda atual","card.tierValue":"Faixa 1 — Ativa",
-    "card.distLabel":"Distribuição automática de cada compra",
-    "dist.liq":"50% Liquidez","dist.proj":"35% Projeto Social","dist.costs":"10% Custos","dist.team":"5% Equipe",
-    "card.burnLabel":"Queima por adoção","card.burnSub":"queimados permanentemente por animal adotado",
+    "hero.p":"PET HELP (PEH) é um ecossistema cripto-social na BSC. Começa por um app que reencontra animais perdidos e registra adoções. Cresce com uma rede de pet shops e clínicas parceiras. E chega a unidades próprias de resgate, castração e adoção — tudo registrado na blockchain.",
+    "hero.cta1":"🐾 Conhecer o App","hero.cta2":"📄 Ler o Whitepaper v3",
+    "hero.stat1":"Supply total PEH","hero.stat2":"PEH para a comunidade","hero.stat3":"Cidade do piloto",
+    "card.phaseLabel":"Fase atual","card.phaseValue":"Fase 1 — O App","card.phaseSub":"Comunidade primeiro. Token depois.",
+    "pill.f1":"F1<br>App","pill.f2":"F2<br>Parceiros","pill.f3":"F3<br>Unidades",
+    "card.allocLabel":"Alocação do supply",
+    "alloc.sale":"50% Venda pública (rodadas)","alloc.comm":"25% Pool da Comunidade","alloc.impact":"25% Reserva de Impacto",
+    "card.burnLabel":"Recompra e queima","card.burnValue":"20% do Fundo","card.burnSub":"todo mês, comprado no mercado e queimado — ligado à receita real",
     "mission.tag":"Nossa Missão","mission.title":"Resgatar. Castrar. Adotar.",
-    "mission.sub":"200 milhões de animais vivem nas ruas. O PET HELP une tecnologia blockchain e impacto social real para mudar essa realidade — com transparência total e auditável na blockchain.",
-    "pillar1.title":"Resgatar","pillar1.text":"Canis de resgate em cada unidade, operando 24h com equipe veterinária para atender emergências e resgates das ruas.",
-    "pillar2.title":"Castrar","pillar2.text":"Centro cirúrgico próprio com foco em esterilização a custo acessível, combatendo na raiz o ciclo de abandono.",
-    "pillar3.title":"Adotar","pillar3.text":"Cada adoção queima 2,5 PEH permanentemente na blockchain — conectando o impacto social à valorização do token.",
-    "unit.tag":"O Modelo","unit.title":"Cada unidade, um complexo completo",
-    "unit.sub":"Cada unidade PET HELP é um complexo integrado — pet shop, clínica 24h, centro cirúrgico e canil de resgate em um único espaço.",
+    "mission.sub":"Zerar o abandono e os maus-tratos de animais. Parece impossível. Não é — e não vamos parar até conseguir. Cada resgate, castração e adoção fica registrado na blockchain, para sempre e para todos verem.",
+    "pillar1.title":"Resgatar","pillar1.text":"Começa no app: avistamentos no mapa reencontram animais perdidos com seus tutores. Na Fase 3, canis de resgate em cada unidade PET HELP.",
+    "pillar2.title":"Castrar","pillar2.text":"Castração acessível via parceiros credenciados e, depois, centros cirúrgicos próprios. Cada castração comprovada queima 25 PEH on-chain.",
+    "pillar3.title":"Adotar","pillar3.text":"Adoções registradas no app com confirmação das duas partes. Cada adoção concluída queima 100 PEH — prova pública e permanente de impacto.",
+    "app.tag":"Fase 1","app.title":"O App PET HELP",
+    "app.sub":"Gratuito, sem cadastro obrigatório no primeiro uso, feito para quem vê um animal na rua e quer ajudar em menos de 10 segundos. É por aqui que a comunidade nasce — antes de qualquer token.",
+    "app.m1t":"Avistamentos no mapa","app.m1p":"Viu um animal perdido? Foto, envio, localização automática. Quem procura vê por onde ele passou.",
+    "app.m2t":"Animais perdidos","app.m2p":"Tutor registra o pet e recebe alerta quando um avistamento compatível aparece no raio configurado.",
+    "app.m3t":"Adoção","app.m3p":"ONGs, protetores e tutores publicam animais. Adoção concluída é confirmada pelas duas partes e registrada.",
+    "app.m4t":"Rede de protetores","app.m4p":"Protetores independentes verificados, com necessidades reais e prestação de contas pública.",
+    "app.ptsT":"🎯 Pontos por colaboração","app.ptsP":"Avistamento confirmado, adoção concluída, castração comprovada — tudo gera pontos, trocáveis por descontos em parceiros. Toda ação exige validação de uma segunda parte. Na Fase 2, os pontos passam a ter lastro em PEH.",
+    "app.whyT":"📌 Por que Niterói","app.whyP":"Um animal perdido em Niterói não interessa a quem está em Manaus. Densidade por bairro vale mais que alcance nacional. O piloto concentra tudo numa cidade, com parceiros fechados antes do lançamento, e só expande com métricas públicas.",
+    "app.waT":"💬 Canais por bairro","app.waP":"Cada avistamento e animal perdido é replicado no grupo de WhatsApp do bairro, mantido pelo projeto. O app alimenta o grupo; o grupo traz gente para o app.",
+    "unit.tag":"Fase 3","unit.title":"Cada unidade, um complexo completo",
+    "unit.sub":"Na maturidade do ecossistema, unidades PET HELP próprias — pet shop, clínica, centro cirúrgico e canil de resgate em um único espaço. Financiadas pelas rodadas de captação e pelo Fundo, com localização decidida via DAO.",
     "unit.s1t":"Pet Shop Completo","unit.s1d":"Rações, acessórios, farmácia veterinária popular",
-    "unit.s2t":"Clínica Veterinária 24h","unit.s2d":"Consultas, vacinas, exames e diagnóstico por imagem",
-    "unit.s3t":"Centro Cirúrgico","unit.s3d":"Cirurgias eletivas e de emergência, UTI e internação",
-    "unit.s4t":"Canil de Resgate","unit.s4d":"Acolhimento de resgatados e campanhas mensais de adoção",
+    "unit.s2t":"Clínica Veterinária","unit.s2d":"Consultas, vacinas, exames e diagnóstico por imagem",
+    "unit.s3t":"Centro Cirúrgico","unit.s3d":"Cirurgias eletivas e de emergência, internação",
+    "unit.s4t":"Canil de Resgate","unit.s4d":"Acolhimento de resgatados e campanhas de adoção",
     "unit.s5t":"Banho & Tosa","unit.s5d":"Com desconto para pagamentos em PEH",
     "unit.s6t":"Plano de Saúde Vet","unit.s6d":"Mensalidades com desconto para holders do token",
-    "unit.projTitle":"Projeção financeira mensal / unidade",
+    "unit.projTitle":"Projeção conservadora mensal / unidade",
     "proj.r1":"Pet Shop","proj.r2":"Consultas veterinárias","proj.r3":"Cirurgias e exames",
     "proj.r4":"Banho e tosa","proj.r5":"Farmácia veterinária","proj.r6":"Internação / canil",
     "proj.gross":"Total bruto","proj.costs":"Custos operacionais","proj.net":"Lucro líquido / unidade",
-    "unit.note":"* Sem aluguel (imóvel próprio) · energia solar instalada",
+    "unit.note":"* Margem de ~20%, média do varejo e serviços veterinários. Valores ilustrativos.",
     "tok.tag":"Tokenomics","tok.title":"Supply e distribuição","tok.total":"PEH Total",
-    "tok.leg1":"Venda pública (5 faixas)","tok.leg2":"Bloqueados (queima por adoção)",
-    "tok.tiersTitle":"Faixas de venda pública",
-    "tier.t1":"Faixa 1","tier.t2":"Faixa 2","tier.t3":"Faixa 3","tier.t4":"Faixa 4","tier.t5":"Faixa 5",
-    "tier.r1":"0 a 100.000.000 tokens","tier.r2":"100M a 200.000.000 tokens","tier.r3":"200M a 300.000.000 tokens","tier.r4":"300M a 400.000.000 tokens","tier.r5":"400M a 500.000.000 tokens",
-    "tok.taxTitle":"💡 Taxa de 3% em todas as transações DEX","tok.taxSub":"1,5% redistribuído aos holders · 1,5% para o fundo de expansão",
-    "buy.tag":"Como Comprar","buy.title":"Simples e seguro em 4 passos",
-    "buy.sub":"Você precisa de uma carteira MetaMask e USDT na rede BSC. O processo leva menos de 2 minutos.",
-    "step1.t":"Instale a MetaMask","step1.p":"Baixe a extensão MetaMask e adicione a rede BSC (Binance Smart Chain).",
-    "step2.t":"Tenha USDT na BSC","step2.p":"Compre BNB em uma exchange, converta para USDT na PancakeSwap.",
-    "step3.t":"Conecte sua carteira","step3.p":"Clique em \"Conectar MetaMask\" neste site e aprove a conexão.",
-    "step4.t":"Compre seus PEH","step4.p":"Digite o valor em USDT, confirme a transação e receba PEH instantaneamente.",
-    "buy.cta":"🐾 Conectar MetaMask e Comprar","buy.note":"Contrato auditável · Código verificado no BscScan",
-    "w.noMeta":"Instale a extensão MetaMask para comprar PEH diretamente neste site.",
-    "w.connectTitle":"Conecte sua carteira para comprar PEH",
-    "w.connectSub":"Você precisa de MetaMask com USDT na rede BSC.",
-    "w.connectBtn":"Conectar MetaMask",
-    "w.wrongNet":"⚠️ Rede incorreta",
-    "w.wrongNetSub":"Troque para a Binance Smart Chain (BSC Mainnet) para continuar.",
-    "w.switchBtn":"Trocar para BSC",
-    "w.presale":"Pré-venda","w.tier":"Faixa",
-    "w.sold":"Vendidos","w.connected":"Conectado",
-    "w.usdtLabel":"Valor em USDT",
-    "w.balance":"Saldo:",
-    "w.youReceive":"Você recebe (estimado):",
-    "w.approveBtn":"✅ Aprovar USDT",
-    "w.buyBtn":"🐾 Comprar PEH",
-    "w.viewTx":"Ver transação no BscScan →",
-    "w.approving":"Aprovando USDT...",
-    "w.approved":"USDT aprovado! Agora clique em Comprar PEH.",
-    "w.buying":"Processando compra...",
-    "w.success":"🎉 Compra realizada com sucesso!",
-    "w.errNoInput":"Digite o valor em USDT.",
-    "w.errBalance":"Saldo insuficiente de USDT.",
-    "w.errMin":"Valor mínimo: 1 USDT.",
-    "w.errRejected":"Transação cancelada pelo usuário.",
-    "w.loading":"Carregando dados do contrato...",
-    "distSec.tag":"Transparência Total","distSec.title":"Cada USDT distribuído na hora",
-    "distSec.sub":"Quando você compra PEH, o valor pago em USDT é dividido automaticamente pelo contrato, sem intermediários.",
-    "d1.t":"Liquidez DEX","d1.p":"Acumulado e injetado na pool PancakeSwap no lançamento do token.",
-    "d2.t":"Projeto Social","d2.p":"Financiamento imediato para construção das unidades PET HELP.",
-    "d3.t":"Custos Operacionais","d3.p":"Plataforma, segurança, sistemas de gestão e gateway de pagamento.",
-    "d4.t":"Equipe","d4.p":"Equipe idealizadora e operacional responsável pelo projeto.",
-    "burn.title":"🔥 O mecanismo que une missão e valor",
-    "burn.p":"500 milhões de tokens estão bloqueados e só serão destruídos de uma forma: quando um animal for adotado. Cada adoção queima 2,5 PEH de forma automática, irreversível e verificável na blockchain.",
-    "burn.s1":"queimados por adoção","burn.s2":"animais a atender","burn.s3":"tokens reservados para queima",
-    "burn.quote":"\"Quando o último animal abandonado encontrar uma família, o último token será queimado.\"",
+    "tok.leg1":"Venda pública (rodadas)","tok.leg2":"Pool da Comunidade (app)","tok.leg3":"Reserva de Impacto",
+    "tok.tiersTitle":"Rodadas de venda pública",
+    "round.t1":"Rodada 1","round.t2":"Rodada 2","round.t3":"Rodada 3","round.t4":"Rodada 4+",
+    "round.r1":"75M PEH · R$ 15M · app operando com métricas públicas","round.r2":"60M PEH · R$ 15M · rede de parceiros e cashback ativos","round.r3":"50M PEH · R$ 15M · segunda cidade","round.r4":"restante · unidades próprias em operação","round.p4":"progressivo",
+    "tok.taxTitle":"💡 Taxa de 3% em toda transação de PEH","tok.taxSub":"1,5% redistribuído aos holders em USDT · 1,5% para o Fundo PET HELP",
+    "tok.cvm":"Rodadas para o público seguem a Resolução CVM 88 (teto de R$ 15M por oferta, intervalo de 120 dias, limite por investidor). Investidores profissionais: oferta com esforços restritos.",
+    "join.tag":"Como Participar","join.title":"Do app ao token, em 4 passos",
+    "join.sub":"Você não precisa de carteira cripto para começar. Precisa de um celular e vontade de ajudar.",
+    "step1.t":"Use o app","step1.p":"Registre avistamentos, ajude a reencontrar animais, publique ou adote. Gratuito, em Niterói.",
+    "step2.t":"Acumule pontos","step2.p":"Cada ação validada gera pontos, trocáveis por descontos em pet shops e clínicas parceiras.",
+    "step3.t":"Participe da Rodada 1","step3.p":"A oferta pública acontece em plataforma autorizada pela CVM, com KYC. Seus pontos viram PEH do Pool da Comunidade.",
+    "step4.t":"Receba cashback","step4.p":"Holders recebem 50% da receita do ecossistema em USDT, proporcional ao saldo de PEH.",
+    "join.noticeT":"⚖️ Não há venda de PEH neste site",
+    "join.noticeP":"O PEH é ofertado como valor mobiliário. A Rodada 1 ocorrerá exclusivamente por meio de plataforma de crowdfunding autorizada pela CVM, com material de oferta próprio. O link será publicado aqui quando a rodada abrir. Desconfie de qualquer outro canal oferecendo PEH.",
+    "distSec.tag":"Transparência Total","distSec.title":"Cada rodada, distribuída à vista",
+    "distSec.sub":"O valor captado em cada rodada segue uma divisão fixa e pública. Toda movimentação do Fundo fica no portal de transparência, com registro on-chain.",
+    "d1.t":"Liquidez","d1.p":"Reserva de liquidez para o mercado secundário, constituída de forma parcial e progressiva a cada rodada.",
+    "d2.t":"Projeto","d2.p":"App, rede de parceiros, unidades PET HELP e repasse à ONG.",
+    "d3.t":"Operação","d3.p":"Plataforma, conformidade regulatória, auditoria e segurança.",
+    "d4.t":"Equipe","d4.p":"Equipe fundadora, com vesting de 24 meses.",
+    "burn.title":"🔥 Dois mecanismos, duas funções",
+    "burn.p":"A queima por impacto é o registro: cada adoção e castração fica gravada na blockchain, verificável por qualquer pessoa. A recompra é a economia: 20% do Fundo compra PEH no mercado todo mês e queima — escassez ligada à receita real, não a uma promessa.",
+    "burn.s1":"queimados por adoção concluída","burn.s2":"queimados por castração comprovada","burn.s3":"do Fundo em recompra e queima mensal",
+    "burn.quote":"\"Quando o último animal abandonado encontrar uma família, a missão estará cumprida. Até lá, cada adoção fica registrada — para sempre, e para todos verem.\"",
     "rm.title":"O caminho até a missão cumprida",
-    "rm1.t":"Fase 1 — Fundação","rm1.l1":"Constituição jurídica (Holding + ONG + Offshore)","rm1.l2":"Auditoria do smart contract","rm1.l3":"Lançamento da plataforma","rm1.l4":"Início da pré-venda (Faixa 1)",
-    "rm2.t":"Fase 2 — Primeiras Unidades","rm2.l1":"Construção das primeiras 4–14 unidades","rm2.l2":"Início dos resgates e adoções","rm2.l3":"Primeiras queimas on-chain","rm2.l4":"Pré-venda Faixas 2 e 3",
-    "rm3.t":"Fase 3 — Expansão Nacional","rm3.l1":"Conclusão da venda pública","rm3.l2":"Lançamento PEH na PancakeSwap","rm3.l3":"Início do cashback para holders","rm3.l4":"30+ unidades no Brasil",
-    "rm4.t":"Fase 4 — Expansão Global","rm4.l1":"Internacionalização do projeto","rm4.l2":"Implementação da DAO","rm4.l3":"Meta: 200 milhões de animais","rm4.l4":"Queima total dos 500M tokens",
+    "rm1.t":"Fase 1 — O App","rm1.l1":"Lançamento em Niterói: avistamentos, perdidos, adoção","rm1.l2":"Parceiros locais fechados","rm1.l3":"Grupos por bairro ativos","rm1.l4":"Constituição da ONG",
+    "rm2.t":"Estrutura e Rodada 1","rm2.l1":"Módulo de protetores e métricas públicas","rm2.l2":"Holding, parecer jurídico, auditoria do contrato","rm2.l3":"Rodada 1 (R$ 15M) via plataforma CVM 88","rm2.l4":"Pontos lastreados em PEH; primeiras queimas",
+    "rm3.t":"Fase 2 — Rede de Parceiros","rm3.l1":"Parceiros aceitando PEH","rm3.l2":"Início do cashback em USDT","rm3.l3":"Primeira recompra e queima","rm3.l4":"Expansão para o Rio de Janeiro",
+    "rm4.t":"Fase 3 — Unidades","rm4.l1":"Rodadas 2 e 3","rm4.l2":"DAO de governança","rm4.l3":"Primeira unidade PET HELP","rm4.l4":"Expansão nacional e internacionalização do app",
     "team.tag":"Equipe","team.title":"As pessoas por trás da missão",
     "team.r1":"CEO & Fundador","team.d1":"Idealizador do projeto. Experiência em comércio e gestão de negócios.",
     "team.r2":"Desenvolvedor Blockchain","team.d2":"Responsável pelo smart contract BEP-20, plataforma e segurança técnica.",
     "team.r3":"Advogado","team.d3":"Especialista em direito cripto, empresarial e regulação CVM.",
     "team.r4":"Diretor Veterinário","team.d4":"Responsável técnico pelas unidades de saúde animal.",
     "faq.title":"Perguntas frequentes",
-    "faq.q1":"Como o dinheiro da minha compra é utilizado?","faq.a1":"Automaticamente e instantaneamente pelo contrato: 50% vai para a carteira de liquidez do PancakeSwap, 35% para construção das unidades PET HELP, 10% para custos operacionais e 5% para a equipe. Tudo verificável na blockchain.",
-    "faq.q2":"O que garante a queima dos tokens?","faq.a2":"O smart contract na BSC. Os 500 milhões de tokens estão bloqueados e só saem quando a função registerAdoption() é chamada pelo oracle autorizado. Cada chamada queima 2,5 PEH irreversivelmente para o endereço 0xdEaD.",
-    "faq.q3":"Quando posso vender meus tokens no mercado?","faq.a3":"O trading na DEX (PancakeSwap) será habilitado somente após a venda completa dos 500 milhões de tokens da pré-venda, garantindo uma pool de liquidez robusta no lançamento.",
-    "faq.q4":"Como funciona o cashback para holders?","faq.a4":"Após o lançamento na DEX, 1,5% de cada transação vai para a carteira de recompensas e é distribuído em USDT proporcionalmente ao saldo de PEH de cada holder.",
-    "faq.q5":"O contrato foi auditado?","faq.a5":"O código-fonte será verificado e publicado no BscScan antes do início da pré-venda. A auditoria profissional está prevista no roadmap.",
-    "cta.title":"Faça parte da missão","cta.sub":"Compre PEH na Faixa 1 — o menor preço da pré-venda — e ajude a mudar a vida de 200 milhões de animais.",
-    "cta.buy":"🐾 Comprar PEH — Faixa 1","cta.wp":"📄 Ler o Whitepaper",
+    "faq.q1":"Por que o app vem antes do token?","faq.a1":"Porque token sem produto é promessa. O app cria comunidade, gera adoções reais e produz as métricas que justificam a Rodada 1. Quem investir compra algo que já funciona.",
+    "faq.q2":"Posso comprar PEH agora?","faq.a2":"Não. A Rodada 1 abre após o app estar operando em Niterói com métricas públicas, e ocorrerá exclusivamente em plataforma de crowdfunding autorizada pela CVM. Não há venda neste site nem por contrato direto.",
+    "faq.q3":"O PEH é um valor mobiliário?","faq.a3":"Sim, e tratamos como tal. O PEH dá direito a participação em receita (cashback em USDT), então a oferta segue a Lei 6.385/76 e a Resolução CVM 88. Preferimos operar dentro da regra a depender de interpretações.",
+    "faq.q4":"Como funciona o cashback?","faq.a4":"50% da receita líquida do ecossistema — taxa de 3%, comissão de parceiros e, na Fase 3, lucro das unidades — é distribuída em USDT aos holders, proporcional ao saldo de PEH. Começa na Fase 2, com a rede de parceiros ativa. Valores não são garantidos.",
+    "faq.q5":"Como ganho tokens usando o app?","faq.a5":"250 milhões de PEH ficam reservados ao Pool da Comunidade, liberados em 10 anos, só por ações validadas: avistamento confirmado pelo tutor, adoção concluída, castração comprovada. Quem ajudou antes do token existir recebe os tokens correspondentes.",
+    "faq.q6":"Quando o PEH vai para a PancakeSwap?","faq.a6":"A negociação secundária base ocorre no ambiente da plataforma autorizada. Listagem em DEX pública depende de parecer jurídico sobre negociação de valor mobiliário fora de ambiente regulado. Não prometemos data.",
+    "cta.title":"Faça parte da missão","cta.sub":"Comece pelo app. Ajude a reencontrar um animal, registre uma adoção, apoie um protetor. O token é consequência.",
+    "cta.app":"🐾 Conhecer o App","cta.wp":"📄 Ler o Whitepaper v3",
     "footer.slogan":"Resgatar. Castrar. Adotar.","footer.nav":"Navegação","footer.docs":"Documentos","footer.contact":"Contato",
-    "footer.contract":"Contrato no BscScan","footer.legal":"Token PEH não é um valor mobiliário. Leia o whitepaper antes de investir."
+    "footer.contract":"Contrato (testnet) no BscScan","footer.legal":"O PEH é ofertado como valor mobiliário, exclusivamente via plataforma autorizada pela CVM. Leia o whitepaper, inclusive a seção de riscos."
   },
   en: {
-    "nav.mission":"Mission","nav.buy":"How to Buy","nav.team":"Team",
-    "nav.whitepaper":"Whitepaper","nav.buyBtn":"Buy PEH",
-    "hero.badge":"Presale active — Tier 1",
+    "nav.mission":"Mission","nav.app":"The App","nav.join":"How to Join","nav.team":"Team",
+    "nav.whitepaper":"Whitepaper","nav.appBtn":"Discover the App",
+    "hero.badge":"Phase 1 — App in Niterói · launching 2026",
     "hero.h1":"The token that truly <em>rescues</em> lives",
-    "hero.p":"PET HELP (PEH) is a crypto-social ecosystem on BSC. Every token purchased builds real rescue, spay/neuter, and adoption centers. Every adopted animal permanently burns tokens.",
-    "hero.cta1":"🐾 Buy PEH now","hero.cta2":"Learn about our mission",
-    "hero.stat1":"Total PEH supply","hero.stat2":"Animals to rescue","hero.stat3":"Tier 1 price",
-    "card.tierLabel":"Current sale tier","card.tierValue":"Tier 1 — Active",
-    "card.distLabel":"Automatic distribution per purchase",
-    "dist.liq":"50% Liquidity","dist.proj":"35% Social Project","dist.costs":"10% Costs","dist.team":"5% Team",
-    "card.burnLabel":"Burn per adoption","card.burnSub":"permanently burned per adopted animal",
+    "hero.p":"PET HELP (PEH) is a crypto-social ecosystem on BSC. It starts with an app that reunites lost animals and records adoptions. It grows through a network of partner pet shops and clinics. And it reaches its own rescue, spay/neuter and adoption units — all recorded on-chain.",
+    "hero.cta1":"🐾 Discover the App","hero.cta2":"📄 Read Whitepaper v3",
+    "hero.stat1":"Total PEH supply","hero.stat2":"PEH for the community","hero.stat3":"Pilot city",
+    "card.phaseLabel":"Current phase","card.phaseValue":"Phase 1 — The App","card.phaseSub":"Community first. Token second.",
+    "pill.f1":"P1<br>App","pill.f2":"P2<br>Partners","pill.f3":"P3<br>Units",
+    "card.allocLabel":"Supply allocation",
+    "alloc.sale":"50% Public sale (rounds)","alloc.comm":"25% Community Pool","alloc.impact":"25% Impact Reserve",
+    "card.burnLabel":"Buyback & burn","card.burnValue":"20% of the Fund","card.burnSub":"every month, bought on the market and burned — tied to real revenue",
     "mission.tag":"Our Mission","mission.title":"Rescue. Spay. Adopt.",
-    "mission.sub":"200 million animals live on the streets. PET HELP unites blockchain technology and real social impact to change this reality — with full transparency auditable on-chain.",
-    "pillar1.title":"Rescue","pillar1.text":"Rescue kennels in every unit, operating 24/7 with veterinary staff to handle emergencies and street rescues.",
-    "pillar2.title":"Spay/Neuter","pillar2.text":"In-house surgical center focused on affordable sterilization, fighting the root cause of abandonment.",
-    "pillar3.title":"Adopt","pillar3.text":"Each adoption permanently burns 2.5 PEH on-chain — connecting social impact directly to token appreciation.",
-    "unit.tag":"The Model","unit.title":"Each unit, a complete complex",
-    "unit.sub":"Each PET HELP unit is an integrated complex — pet shop, 24h clinic, surgical center and rescue kennel all in one place.",
+    "mission.sub":"End animal abandonment and abuse. It sounds impossible. It isn't — and we won't stop until it's done. Every rescue, spay/neuter and adoption is recorded on-chain, forever and for everyone to see.",
+    "pillar1.title":"Rescue","pillar1.text":"It starts in the app: map sightings reunite lost animals with their owners. In Phase 3, rescue kennels in every PET HELP unit.",
+    "pillar2.title":"Spay/Neuter","pillar2.text":"Affordable sterilization through accredited partners and, later, our own surgical centers. Each verified procedure burns 25 PEH on-chain.",
+    "pillar3.title":"Adopt","pillar3.text":"Adoptions recorded in the app with two-party confirmation. Each completed adoption burns 100 PEH — permanent public proof of impact.",
+    "app.tag":"Phase 1","app.title":"The PET HELP App",
+    "app.sub":"Free, no mandatory sign-up on first use, built for anyone who sees an animal on the street and wants to help in under 10 seconds. This is where the community is born — before any token.",
+    "app.m1t":"Map sightings","app.m1p":"Saw a lost animal? Photo, send, automatic location. Whoever is searching sees where it's been.",
+    "app.m2t":"Lost animals","app.m2p":"Owners register the pet and get alerts when a matching sighting appears within their radius.",
+    "app.m3t":"Adoption","app.m3p":"NGOs, rescuers and owners list animals. Completed adoptions are confirmed by both parties and recorded.",
+    "app.m4t":"Rescuer network","app.m4p":"Verified independent rescuers, with real needs and public accountability.",
+    "app.ptsT":"🎯 Points for helping","app.ptsP":"Confirmed sighting, completed adoption, verified spay/neuter — everything earns points, redeemable for partner discounts. Every action requires second-party validation. In Phase 2, points become backed by PEH.",
+    "app.whyT":"📌 Why Niterói","app.whyP":"A lost animal in Niterói means nothing to someone in Manaus. Neighborhood density beats national reach. The pilot focuses everything on one city, with partners signed before launch, and expands only on public metrics.",
+    "app.waT":"💬 Neighborhood channels","app.waP":"Every sighting and lost animal is mirrored to the neighborhood WhatsApp group run by the project. The app feeds the group; the group brings people to the app.",
+    "unit.tag":"Phase 3","unit.title":"Each unit, a complete complex",
+    "unit.sub":"At ecosystem maturity, PET HELP's own units — pet shop, clinic, surgical center and rescue kennel in one place. Funded by fundraising rounds and the Fund, with locations decided via DAO.",
     "unit.s1t":"Full Pet Shop","unit.s1d":"Food, accessories, affordable veterinary pharmacy",
-    "unit.s2t":"24h Veterinary Clinic","unit.s2d":"Consultations, vaccines, lab tests and imaging",
-    "unit.s3t":"Surgical Center","unit.s3d":"Elective and emergency surgeries, ICU and hospitalization",
-    "unit.s4t":"Rescue Kennel","unit.s4d":"Rescued animal shelter and monthly adoption campaigns",
+    "unit.s2t":"Veterinary Clinic","unit.s2d":"Consultations, vaccines, lab tests and imaging",
+    "unit.s3t":"Surgical Center","unit.s3d":"Elective and emergency surgeries, hospitalization",
+    "unit.s4t":"Rescue Kennel","unit.s4d":"Rescued animal shelter and adoption campaigns",
     "unit.s5t":"Grooming","unit.s5d":"Discounts for payments made in PEH",
     "unit.s6t":"Vet Health Plan","unit.s6d":"Monthly subscriptions with discounts for token holders",
-    "unit.projTitle":"Monthly financial projection / unit",
+    "unit.projTitle":"Conservative monthly projection / unit",
     "proj.r1":"Pet Shop","proj.r2":"Veterinary consultations","proj.r3":"Surgeries & exams",
     "proj.r4":"Grooming","proj.r5":"Veterinary pharmacy","proj.r6":"Kennel / hospitalization",
     "proj.gross":"Gross revenue","proj.costs":"Operating costs","proj.net":"Net profit / unit",
-    "unit.note":"* No rent (owned property) · solar energy installed",
+    "unit.note":"* ~20% margin, the average for pet retail and veterinary services. Illustrative figures.",
     "tok.tag":"Tokenomics","tok.title":"Supply & distribution","tok.total":"PEH Total",
-    "tok.leg1":"Public sale (5 tiers)","tok.leg2":"Locked (burn by adoption)",
-    "tok.tiersTitle":"Public sale tiers",
-    "tier.t1":"Tier 1","tier.t2":"Tier 2","tier.t3":"Tier 3","tier.t4":"Tier 4","tier.t5":"Tier 5",
-    "tier.r1":"0 to 100,000,000 tokens","tier.r2":"100M to 200,000,000 tokens","tier.r3":"200M to 300,000,000 tokens","tier.r4":"300M to 400,000,000 tokens","tier.r5":"400M to 500,000,000 tokens",
-    "tok.taxTitle":"💡 3% tax on all DEX transactions","tok.taxSub":"1.5% redistributed to holders · 1.5% to the expansion fund",
-    "buy.tag":"How to Buy","buy.title":"Simple and safe in 4 steps",
-    "buy.sub":"You need a MetaMask wallet and USDT on the BSC network. The process takes less than 2 minutes.",
-    "step1.t":"Install MetaMask","step1.p":"Download the MetaMask extension and add the BSC (Binance Smart Chain) network.",
-    "step2.t":"Get USDT on BSC","step2.p":"Buy BNB on an exchange, then swap for USDT on PancakeSwap.",
-    "step3.t":"Connect your wallet","step3.p":"Click \"Connect MetaMask\" on this site and approve the connection.",
-    "step4.t":"Buy your PEH","step4.p":"Enter the USDT amount, confirm the transaction and receive PEH instantly.",
-    "buy.cta":"🐾 Connect MetaMask and Buy","buy.note":"Auditable contract · Code verified on BscScan",
-    "w.noMeta":"Install the MetaMask extension to buy PEH directly on this site.",
-    "w.connectTitle":"Connect your wallet to buy PEH",
-    "w.connectSub":"You need MetaMask with USDT on the BSC network.",
-    "w.connectBtn":"Connect MetaMask",
-    "w.wrongNet":"⚠️ Wrong network",
-    "w.wrongNetSub":"Switch to Binance Smart Chain (BSC Mainnet) to continue.",
-    "w.switchBtn":"Switch to BSC",
-    "w.presale":"Presale","w.tier":"Tier",
-    "w.sold":"Sold","w.connected":"Connected",
-    "w.usdtLabel":"Amount in USDT",
-    "w.balance":"Balance:",
-    "w.youReceive":"You receive (estimated):",
-    "w.approveBtn":"✅ Approve USDT",
-    "w.buyBtn":"🐾 Buy PEH",
-    "w.viewTx":"View transaction on BscScan →",
-    "w.approving":"Approving USDT...",
-    "w.approved":"USDT approved! Now click Buy PEH.",
-    "w.buying":"Processing purchase...",
-    "w.success":"🎉 Purchase successful!",
-    "w.errNoInput":"Enter the USDT amount.",
-    "w.errBalance":"Insufficient USDT balance.",
-    "w.errMin":"Minimum amount: 1 USDT.",
-    "w.errRejected":"Transaction rejected by user.",
-    "w.loading":"Loading contract data...",
-    "distSec.tag":"Full Transparency","distSec.title":"Every USDT distributed instantly",
-    "distSec.sub":"When you buy PEH, the USDT you pay is automatically split by the smart contract — no middlemen.",
-    "d1.t":"DEX Liquidity","d1.p":"Accumulated and injected into the PancakeSwap pool at token launch.",
-    "d2.t":"Social Project","d2.p":"Immediate funding for building PET HELP units.",
-    "d3.t":"Operating Costs","d3.p":"Platform, security, management systems and payment gateway.",
-    "d4.t":"Team","d4.p":"The founding and operational team responsible for the project.",
-    "burn.title":"🔥 The mechanism that unites mission and value",
-    "burn.p":"500 million tokens are locked and will only be destroyed in one way: when an animal is adopted. Each adoption automatically burns 2.5 PEH — irreversibly and verifiably on-chain.",
-    "burn.s1":"burned per adoption","burn.s2":"animals to serve","burn.s3":"tokens reserved for burning",
-    "burn.quote":"\"When the last abandoned animal finds a family, the last token will be burned.\"",
+    "tok.leg1":"Public sale (rounds)","tok.leg2":"Community Pool (app)","tok.leg3":"Impact Reserve",
+    "tok.tiersTitle":"Public sale rounds",
+    "round.t1":"Round 1","round.t2":"Round 2","round.t3":"Round 3","round.t4":"Round 4+",
+    "round.r1":"75M PEH · R$ 15M · app live with public metrics","round.r2":"60M PEH · R$ 15M · partner network and cashback live","round.r3":"50M PEH · R$ 15M · second city","round.r4":"remainder · own units operating","round.p4":"progressive",
+    "tok.taxTitle":"💡 3% fee on every PEH transaction","tok.taxSub":"1.5% redistributed to holders in USDT · 1.5% to the PET HELP Fund",
+    "tok.cvm":"Public rounds follow CVM Resolution 88 (R$ 15M cap per offering, 120-day interval, per-investor limits). Professional investors: restricted-effort offering.",
+    "join.tag":"How to Join","join.title":"From app to token, in 4 steps",
+    "join.sub":"You don't need a crypto wallet to start. You need a phone and the will to help.",
+    "step1.t":"Use the app","step1.p":"Report sightings, help reunite animals, list or adopt. Free, in Niterói.",
+    "step2.t":"Earn points","step2.p":"Every validated action earns points, redeemable for discounts at partner pet shops and clinics.",
+    "step3.t":"Join Round 1","step3.p":"The public offering happens on a CVM-authorized platform, with KYC. Your points become PEH from the Community Pool.",
+    "step4.t":"Receive cashback","step4.p":"Holders receive 50% of ecosystem revenue in USDT, proportional to their PEH balance.",
+    "join.noticeT":"⚖️ PEH is not sold on this website",
+    "join.noticeP":"PEH is offered as a security. Round 1 will take place exclusively through a CVM-authorized crowdfunding platform, with its own offering materials. The link will be published here when the round opens. Be suspicious of any other channel offering PEH.",
+    "distSec.tag":"Full Transparency","distSec.title":"Every round, distributed in the open",
+    "distSec.sub":"Funds raised in each round follow a fixed, public split. Every Fund movement is shown on the transparency portal, with on-chain records.",
+    "d1.t":"Liquidity","d1.p":"Liquidity reserve for the secondary market, built partially and progressively with each round.",
+    "d2.t":"Project","d2.p":"App, partner network, PET HELP units and NGO funding.",
+    "d3.t":"Operations","d3.p":"Platform, regulatory compliance, audit and security.",
+    "d4.t":"Team","d4.p":"Founding team, with 24-month vesting.",
+    "burn.title":"🔥 Two mechanisms, two purposes",
+    "burn.p":"Impact burn is the record: every adoption and spay/neuter is written on-chain, verifiable by anyone. Buyback is the economics: 20% of the Fund buys PEH on the market every month and burns it — scarcity tied to real revenue, not to a promise.",
+    "burn.s1":"burned per completed adoption","burn.s2":"burned per verified spay/neuter","burn.s3":"of the Fund in monthly buyback & burn",
+    "burn.quote":"\"When the last abandoned animal finds a family, the mission is complete. Until then, every adoption stays recorded — forever, for everyone to see.\"",
     "rm.title":"The path to mission accomplished",
-    "rm1.t":"Phase 1 — Foundation","rm1.l1":"Legal setup (Holding + NGO + Offshore)","rm1.l2":"Smart contract audit","rm1.l3":"Platform launch","rm1.l4":"Presale start (Tier 1)",
-    "rm2.t":"Phase 2 — First Units","rm2.l1":"Build first 4–14 PET HELP units","rm2.l2":"Start rescues and adoptions","rm2.l3":"First on-chain burns","rm2.l4":"Presale Tiers 2 and 3",
-    "rm3.t":"Phase 3 — National Expansion","rm3.l1":"Complete public sale","rm3.l2":"PEH listed on PancakeSwap","rm3.l3":"Cashback distribution begins","rm3.l4":"30+ units across Brazil",
-    "rm4.t":"Phase 4 — Global Expansion","rm4.l1":"Project internationalization","rm4.l2":"DAO governance launch","rm4.l3":"Goal: 200 million animals served","rm4.l4":"Complete burn of 500M tokens",
+    "rm1.t":"Phase 1 — The App","rm1.l1":"Launch in Niterói: sightings, lost pets, adoption","rm1.l2":"Local partners signed","rm1.l3":"Neighborhood groups live","rm1.l4":"NGO incorporation",
+    "rm2.t":"Structure & Round 1","rm2.l1":"Rescuer module and public metrics","rm2.l2":"Holding, legal opinion, contract audit","rm2.l3":"Round 1 (R$ 15M) via CVM 88 platform","rm2.l4":"Points backed by PEH; first burns",
+    "rm3.t":"Phase 2 — Partner Network","rm3.l1":"Partners accepting PEH","rm3.l2":"USDT cashback begins","rm3.l3":"First buyback & burn","rm3.l4":"Expansion to Rio de Janeiro",
+    "rm4.t":"Phase 3 — Units","rm4.l1":"Rounds 2 and 3","rm4.l2":"Governance DAO","rm4.l3":"First PET HELP unit","rm4.l4":"National expansion and app internationalization",
     "team.tag":"Team","team.title":"The people behind the mission",
     "team.r1":"CEO & Founder","team.d1":"Project visionary. Background in retail and business management.",
     "team.r2":"Blockchain Developer","team.d2":"Responsible for the BEP-20 smart contract, platform and technical security.",
     "team.r3":"Attorney","team.d3":"Specialist in crypto law, corporate law and CVM regulation.",
     "team.r4":"Veterinary Director","team.d4":"Technical director for all animal health units.",
     "faq.title":"Frequently Asked Questions",
-    "faq.q1":"How is the money from my purchase used?","faq.a1":"Automatically and instantly by the contract: 50% goes to the PancakeSwap liquidity wallet, 35% to building PET HELP units, 10% to operational costs and 5% to the team. All verifiable on-chain.",
-    "faq.q2":"What guarantees the token burn?","faq.a2":"The smart contract on BSC. The 500 million tokens are locked and can only leave when registerAdoption() is called by the authorized oracle. Each call irreversibly burns 2.5 PEH to the 0xdEaD address.",
-    "faq.q3":"When can I trade my tokens?","faq.a3":"DEX trading (PancakeSwap) will only be enabled after all 500 million presale tokens are sold, ensuring a robust liquidity pool at launch.",
-    "faq.q4":"How does the holder cashback work?","faq.a4":"After the DEX launch, 1.5% of every transaction goes to the rewards wallet and is distributed in USDT proportionally to each holder's PEH balance.",
-    "faq.q5":"Has the contract been audited?","faq.a5":"The source code will be verified and published on BscScan before the presale begins. A professional audit by a specialized firm is planned in the roadmap.",
-    "cta.title":"Be part of the mission","cta.sub":"Buy PEH in Tier 1 — the lowest presale price — and help change the lives of 200 million animals.",
-    "cta.buy":"🐾 Buy PEH — Tier 1","cta.wp":"📄 Read the Whitepaper",
+    "faq.q1":"Why does the app come before the token?","faq.a1":"Because a token without a product is a promise. The app builds community, generates real adoptions and produces the metrics that justify Round 1. Investors buy something that already works.",
+    "faq.q2":"Can I buy PEH now?","faq.a2":"No. Round 1 opens after the app is live in Niterói with public metrics, and will take place exclusively on a CVM-authorized crowdfunding platform. There is no sale on this site or via direct contract.",
+    "faq.q3":"Is PEH a security?","faq.a3":"Yes, and we treat it as one. PEH entitles holders to revenue participation (USDT cashback), so the offering follows Law 6.385/76 and CVM Resolution 88. We'd rather operate within the rules than rely on interpretations.",
+    "faq.q4":"How does cashback work?","faq.a4":"50% of net ecosystem revenue — the 3% fee, partner commissions and, in Phase 3, unit profits — is distributed in USDT to holders, proportional to PEH balance. It starts in Phase 2, once the partner network is live. Amounts are not guaranteed.",
+    "faq.q5":"How do I earn tokens by using the app?","faq.a5":"250 million PEH are reserved for the Community Pool, released over 10 years, only for validated actions: owner-confirmed sightings, completed adoptions, verified spay/neuter. Those who helped before the token existed receive the corresponding tokens.",
+    "faq.q6":"When will PEH be on PancakeSwap?","faq.a6":"Base secondary trading happens within the authorized platform's environment. Listing on a public DEX depends on a legal opinion regarding trading securities outside a regulated venue. We don't promise a date.",
+    "cta.title":"Be part of the mission","cta.sub":"Start with the app. Help reunite an animal, record an adoption, support a rescuer. The token is the consequence.",
+    "cta.app":"🐾 Discover the App","cta.wp":"📄 Read Whitepaper v3",
     "footer.slogan":"Rescue. Spay. Adopt.","footer.nav":"Navigation","footer.docs":"Documents","footer.contact":"Contact",
-    "footer.contract":"Contract on BscScan","footer.legal":"PEH token is not a security. Read the whitepaper before investing."
+    "footer.contract":"Contract (testnet) on BscScan","footer.legal":"PEH is offered as a security, exclusively through a CVM-authorized platform. Read the whitepaper, including the risks section."
   }
 };
 
@@ -840,402 +785,5 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 </script>
-<!-- ═══════════════════════════════════════════════════════════
-     ETHERS.JS v5 — Web3 Library
-════════════════════════════════════════════════════════════ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
-
-<script>
-// ════════════════════════════════════════════════════════════
-//  PET HELP — Web3 Integration
-//  BEP-20 Token Buy Flow: Connect → Approve USDT → Buy PEH
-// ════════════════════════════════════════════════════════════
-
-// ── CONFIGURAÇÃO ─────────────────────────────────────────────
-// Após fazer o deploy, cole o endereço do contrato PEH aqui:
-const PEH_CONTRACT  = "0x036108Ce9A7fE7c28E61482CA61F6e3720535BF2";
-
-// USDT na BSC Mainnet (não precisa alterar)
-const USDT_CONTRACT = "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd";
-
-// BSC Mainnet
-const BSC_CHAIN_ID     = 97;
-const BSC_CHAIN_ID_HEX = "0x61";
-const BSC_PARAMS = {
-  chainId: BSC_CHAIN_ID_HEX,
-  chainName: "BNB Smart Chain Testnet",
-  nativeCurrency: { name: "BNB", symbol: "BNB", decimals: 18 },
-  rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
-  blockExplorerUrls: ["https://testnet.bscscan.com"]
-};
-const BSCSCAN_URL = "https://testnet.bscscan.com";
-
-// ── ABIs (mínimos) ────────────────────────────────────────────
-const PEH_ABI = [
-  "function buyTokens(uint256 usdtAmount) external",
-  "function currentPrice() external view returns (uint256)",
-  "function currentTier() public view returns (uint8)",
-  "function estimateTokens(uint256 usdtAmount) external view returns (uint256)",
-  "function totalSold() external view returns (uint256)",
-  "function ecosystemStatus() external view returns (uint256,uint256,uint256,uint256,uint256,uint8,uint256,bool)"
-];
-const USDT_ABI = [
-  "function approve(address spender, uint256 amount) external returns (bool)",
-  "function allowance(address owner, address spender) external view returns (uint256)",
-  "function balanceOf(address account) external view returns (uint256)",
-  "function decimals() external view returns (uint8)"
-];
-
-// ── STATE ─────────────────────────────────────────────────────
-let provider = null;
-let signer   = null;
-let userAddr = null;
-let pehContract  = null;
-let usdtContract = null;
-let currentUsdtDecimals = 18;
-let currentPriceRaw = ethers.BigNumber.from("35000"); // fallback: $0.035 (6 dec)
-let userUsdtBalance = ethers.BigNumber.from(0);
-let currentAllowance = ethers.BigNumber.from(0);
-const PUBLIC_SUPPLY = ethers.utils.parseUnits("500000000", 18);
-
-// ── HELPERS ───────────────────────────────────────────────────
-function t(key) {
-  return (translations[currentLang] || {})[key] || key;
-}
-
-function showMsg(id, text, type) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  el.textContent = text;
-  el.className = "w-msg" + (type ? " " + type : "");
-}
-
-function shortAddr(addr) {
-  return addr.slice(0, 6) + "..." + addr.slice(-4);
-}
-
-function formatUsdt(bn, dec) {
-  return parseFloat(ethers.utils.formatUnits(bn, dec)).toFixed(2);
-}
-
-function formatPeh(bn) {
-  const n = parseFloat(ethers.utils.formatUnits(bn, 18));
-  if (n >= 1_000_000) return (n / 1_000_000).toFixed(2) + "M";
-  if (n >= 1_000)     return (n / 1_000).toFixed(2) + "K";
-  return n.toFixed(2);
-}
-
-function showPanel(id) {
-  ["w-no-metamask","w-disconnected","w-wrong-network","w-connected"]
-    .forEach(p => {
-      const el = document.getElementById(p);
-      if (el) el.style.display = (p === id ? "" : "none");
-    });
-}
-
-// ── CONTRACT DEPLOYED CHECK ───────────────────────────────────
-function isContractConfigured() {
-  return PEH_CONTRACT && PEH_CONTRACT !== "";
-}
-
-// ── INIT ──────────────────────────────────────────────────────
-window.addEventListener("load", async () => {
-  if (!window.ethereum) {
-    showPanel("w-no-metamask");
-    return;
-  }
-
-  // Detectar se já está conectado
-  try {
-    const accounts = await window.ethereum.request({ method: "eth_accounts" });
-    if (accounts.length > 0) {
-      await setupWallet(accounts[0]);
-    }
-  } catch (e) { /* não conectado */ }
-
-  // Escutar mudanças de conta/rede
-  window.ethereum.on("accountsChanged", async (accounts) => {
-    if (accounts.length === 0) {
-      resetWallet();
-    } else {
-      await setupWallet(accounts[0]);
-    }
-  });
-
-  window.ethereum.on("chainChanged", (chainId) => {
-    // Só recarrega se mudar para uma rede diferente — evita loop
-    const newChainId = parseInt(chainId, 16);
-    if (newChainId !== BSC_CHAIN_ID) {
-      showPanel("w-wrong-network");
-    } else {
-      window.location.reload();
-    }
-  });
-
-  // Dados estáticos iniciais — só carrega da blockchain quando a carteira conectar
-  document.getElementById("w-tier-num") && (document.getElementById("w-tier-num").textContent = "1");
-  document.getElementById("w-price-val") && (document.getElementById("w-price-val").textContent = "0.035");
-});
-
-// ── LOAD PUBLIC DATA (sem conexão) ────────────────────────────
-async function loadPublicContractData() {
-  try {
-    const readProvider = new ethers.providers.StaticJsonRpcProvider("https://data-seed-prebsc-1-s1.binance.org:8545/", { chainId: 97, name: "bnbt" });
-    const pehRead = new ethers.Contract(PEH_CONTRACT, PEH_ABI, readProvider);
-    const usdtRead = new ethers.Contract(USDT_CONTRACT, USDT_ABI, readProvider);
-
-    const [status, usdtDec] = await Promise.all([
-      pehRead.ecosystemStatus(),
-      usdtRead.decimals()
-    ]);
-
-    currentUsdtDecimals = usdtDec;
-    currentPriceRaw = status[6]; // currentPrice (6 dec USDT)
-
-    const sold = status[0];
-    const tier = status[5];
-    const priceFmt = (Number(status[6]) / 1_000_000).toFixed(3);
-    const pct = sold.mul(100).div(PUBLIC_SUPPLY).toNumber();
-
-    // Atualizar UI
-    const soldFmt = formatPeh(sold);
-    document.getElementById("w-tier-num") && (document.getElementById("w-tier-num").textContent = tier);
-    document.getElementById("w-price-val") && (document.getElementById("w-price-val").textContent = priceFmt);
-    document.getElementById("w-sold") && (document.getElementById("w-sold").textContent = soldFmt);
-    document.getElementById("w-pct") && (document.getElementById("w-pct").textContent = pct + "%");
-    document.getElementById("w-fill") && (document.getElementById("w-fill").style.width = pct + "%");
-
-    // Também atualizar hero card
-    const heroTier = document.getElementById("hero-tier-val");
-    if (heroTier) heroTier.textContent = "Faixa " + tier + " — $" + priceFmt + " USDT";
-
-  } catch (e) {
-    console.warn("Contrato não encontrado ou não deployado ainda.", e.message);
-  }
-}
-
-// ── CONNECT WALLET ────────────────────────────────────────────
-async function connectWallet() {
-  if (!window.ethereum) { showPanel("w-no-metamask"); return; }
-  try {
-    showMsg("w-connect-msg", "Conectando...", "info");
-    const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
-    await setupWallet(accounts[0]);
-  } catch (e) {
-    if (e.code === 4001) {
-      showMsg("w-connect-msg", t("w.errRejected"), "error");
-    } else {
-      showMsg("w-connect-msg", e.message, "error");
-    }
-  }
-}
-
-async function setupWallet(addr) {
-  provider = new ethers.providers.Web3Provider(window.ethereum, "any");
-  signer   = provider.getSigner();
-  userAddr = addr;
-
-  const network = await provider.getNetwork();
-  if (network.chainId !== BSC_CHAIN_ID) {
-    showPanel("w-wrong-network");
-    return;
-  }
-
-  // Conectado na BSC certa
-  showPanel("w-connected");
-  document.getElementById("w-addr-short").textContent = shortAddr(addr);
-
-  if (isContractConfigured()) {
-    pehContract  = new ethers.Contract(PEH_CONTRACT,  PEH_ABI,  signer);
-    usdtContract = new ethers.Contract(USDT_CONTRACT, USDT_ABI, signer);
-    await refreshUserState();
-  } else {
-    showMsg("w-status-msg", "⚠️ Contrato ainda não deployado. Configure o endereço em PEH_CONTRACT.", "error");
-  }
-}
-
-function resetWallet() {
-  provider = signer = userAddr = pehContract = usdtContract = null;
-  showPanel("w-disconnected");
-  showMsg("w-connect-msg", "", "");
-}
-
-// ── SWITCH TO BSC ─────────────────────────────────────────────
-async function switchToBSC() {
-  try {
-    await window.ethereum.request({ method: "wallet_switchEthereumChain", params: [{ chainId: BSC_CHAIN_ID_HEX }] });
-  } catch (e) {
-    if (e.code === 4902) {
-      try {
-        await window.ethereum.request({ method: "wallet_addEthereumChain", params: [BSC_PARAMS] });
-      } catch (e2) { console.error(e2); }
-    }
-  }
-}
-
-// ── REFRESH USER STATE ────────────────────────────────────────
-async function refreshUserState() {
-  if (!usdtContract || !userAddr) return;
-  try {
-    showMsg("w-status-msg", t("w.loading"), "info");
-
-    const [bal, allowance, usdtDec, status] = await Promise.all([
-      usdtContract.balanceOf(userAddr),
-      usdtContract.allowance(userAddr, PEH_CONTRACT),
-      usdtContract.decimals(),
-      pehContract.ecosystemStatus()
-    ]);
-
-    currentUsdtDecimals = usdtDec;
-    currentPriceRaw     = status[6];
-    userUsdtBalance     = bal;
-    currentAllowance    = allowance;
-
-    // UI
-    document.getElementById("w-usdt-bal").textContent = formatUsdt(bal, usdtDec);
-    document.getElementById("w-tier-num").textContent  = status[5];
-    document.getElementById("w-price-val").textContent = (Number(status[6]) / 1_000_000).toFixed(3);
-
-    const sold = status[0];
-    const pct  = sold.mul(100).div(PUBLIC_SUPPLY).toNumber();
-    document.getElementById("w-sold").textContent = formatPeh(sold);
-    document.getElementById("w-pct").textContent  = pct + "%";
-    document.getElementById("w-fill").style.width = pct + "%";
-
-    showMsg("w-status-msg", "", "");
-    updateButtons();
-  } catch (e) {
-    showMsg("w-status-msg", "Erro ao carregar dados: " + e.message, "error");
-  }
-}
-
-// ── ESTIMATE TOKENS ───────────────────────────────────────────
-function onUsdtInput() {
-  const raw = parseFloat(document.getElementById("w-usdt-input").value);
-  if (!raw || raw <= 0) {
-    document.getElementById("w-peh-estimate").textContent = "— PEH";
-    hideActionBtns();
-    return;
-  }
-
-  // Cálculo local: tokens = usdtAmount / pricePerToken
-  // currentPriceRaw tem 6 decimais (mesmo que USDT 6-dec)
-  // usdtAmount tem currentUsdtDecimals
-  try {
-    const usdtRaw = ethers.utils.parseUnits(raw.toFixed(6), currentUsdtDecimals);
-    // normalizar: trazer tudo pra mesma base de 6 decimais
-    const usdtIn6 = currentUsdtDecimals === 6 ? usdtRaw : usdtRaw.div(ethers.BigNumber.from(10).pow(currentUsdtDecimals - 6));
-    // tokens = (usdtIn6 * 1e18) / (priceRaw * 1e12)
-    const tokens = usdtIn6.mul(ethers.BigNumber.from(10).pow(18)).div(currentPriceRaw.mul(ethers.BigNumber.from(10).pow(12)));
-    document.getElementById("w-peh-estimate").textContent = formatPeh(tokens) + " PEH";
-    updateButtons();
-  } catch (e) {
-    document.getElementById("w-peh-estimate").textContent = "— PEH";
-  }
-}
-
-function hideActionBtns() {
-  document.getElementById("w-approve-btn").style.display = "none";
-  document.getElementById("w-buy-btn").style.display     = "none";
-}
-
-function updateButtons() {
-  if (!isContractConfigured() || !userAddr) { hideActionBtns(); return; }
-  const raw = parseFloat(document.getElementById("w-usdt-input").value);
-  if (!raw || raw <= 0) { hideActionBtns(); return; }
-
-  try {
-    const usdtRaw = ethers.utils.parseUnits(raw.toFixed(6), currentUsdtDecimals);
-
-    if (currentAllowance.lt(usdtRaw)) {
-      // Precisa aprovar
-      document.getElementById("w-approve-btn").style.display = "";
-      document.getElementById("w-buy-btn").style.display     = "none";
-    } else {
-      // Já aprovado, pode comprar
-      document.getElementById("w-approve-btn").style.display = "none";
-      document.getElementById("w-buy-btn").style.display     = "";
-    }
-  } catch (e) { hideActionBtns(); }
-}
-
-// ── APPROVE USDT ──────────────────────────────────────────────
-async function doApprove() {
-  if (!usdtContract) return;
-  const raw = parseFloat(document.getElementById("w-usdt-input").value);
-  if (!raw || raw <= 0) { showMsg("w-status-msg", t("w.errNoInput"), "error"); return; }
-
-  try {
-    const usdtRaw = ethers.utils.parseUnits(raw.toFixed(6), currentUsdtDecimals);
-    const btn = document.getElementById("w-approve-btn");
-    btn.disabled = true;
-    btn.textContent = t("w.approving");
-    showMsg("w-status-msg", t("w.approving"), "info");
-    document.getElementById("w-tx-link").style.display = "none";
-
-    const tx = await usdtContract.approve(PEH_CONTRACT, usdtRaw);
-    showMsg("w-status-msg", "⏳ Aguardando confirmação...", "info");
-    const receipt = await tx.wait();
-
-    currentAllowance = usdtRaw;
-    showMsg("w-status-msg", t("w.approved"), "success");
-    btn.textContent = t("w.approveBtn");
-    btn.disabled = false;
-    updateButtons();
-  } catch (e) {
-    const btn = document.getElementById("w-approve-btn");
-    btn.disabled = false;
-    btn.textContent = t("w.approveBtn");
-    const msg = e.code === 4001 ? t("w.errRejected") : (e.reason || e.message || "Erro desconhecido");
-    showMsg("w-status-msg", msg, "error");
-  }
-}
-
-// ── BUY TOKENS ────────────────────────────────────────────────
-async function doBuy() {
-  if (!pehContract) return;
-  const raw = parseFloat(document.getElementById("w-usdt-input").value);
-  if (!raw || raw <= 0) { showMsg("w-status-msg", t("w.errNoInput"), "error"); return; }
-  if (raw < 1)          { showMsg("w-status-msg", t("w.errMin"), "error"); return; }
-
-  try {
-    const usdtRaw = ethers.utils.parseUnits(raw.toFixed(6), currentUsdtDecimals);
-    if (userUsdtBalance.lt(usdtRaw)) { showMsg("w-status-msg", t("w.errBalance"), "error"); return; }
-
-    const btn = document.getElementById("w-buy-btn");
-    btn.disabled = true;
-    btn.textContent = t("w.buying");
-    showMsg("w-status-msg", t("w.buying"), "info");
-    document.getElementById("w-tx-link").style.display = "none";
-
-    const tx = await pehContract.buyTokens(usdtRaw);
-    showMsg("w-status-msg", "⏳ Aguardando confirmação na blockchain...", "info");
-    const receipt = await tx.wait();
-
-    showMsg("w-status-msg", t("w.success"), "success");
-    btn.textContent = t("w.buyBtn");
-    btn.disabled = false;
-
-    // Link para o BscScan
-    const txLink = document.getElementById("w-tx-link");
-    txLink.href = BSCSCAN_URL + "/tx/" + receipt.transactionHash;
-    txLink.style.display = "";
-    txLink.textContent = t("w.viewTx");
-
-    // Limpar input e atualizar estado
-    document.getElementById("w-usdt-input").value = "";
-    document.getElementById("w-peh-estimate").textContent = "— PEH";
-    await refreshUserState();
-    hideActionBtns();
-  } catch (e) {
-    const btn = document.getElementById("w-buy-btn");
-    btn.disabled = false;
-    btn.textContent = t("w.buyBtn");
-    const msg = e.code === 4001 ? t("w.errRejected") : (e.reason || e.message || "Erro desconhecido");
-    showMsg("w-status-msg", msg, "error");
-  }
-}
-</script>
-
 </body>
 </html>
